@@ -1,0 +1,48 @@
+{
+  "certifications": [
+    {
+      "id": "advanced-react",
+      "name": "Advanced React",
+      "issuer": "Meta",
+      "issueDate": "2025-03-12",
+      "expiryDate": null,
+      "credentialId": "MWXZGQD1IWNW",
+      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      "url": "https://www.coursera.org/account/accomplishments/records/MWXZGQD1IWNW",
+      "description": "Create robust and reusable components with advanced techniques, interact with remote servers via APIs, test React applications with React Testing Library, and integrate commonly used React libraries."
+    },
+    {
+      "id": "learn-typescript",
+      "name": "Learn Typescript",
+      "issuer": "Scrimba",
+      "issueDate": "2025-03-12",
+      "expiryDate": null,
+      "credentialId": "GETJFWSH411N",
+      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+      "url": "https://www.coursera.org/account/accomplishments/records/GETJFWSH411N",
+      "description": "A solid understanding of TypeScript fundamentals to create safer and more reliable JavaScript applications, including data validation, unit testing, debugging, and software design patterns."
+    },
+    {
+      "id": "typescript-operators",
+      "name": "TypeScript Operators",
+      "issuer": "Coursera Project Network",
+      "issueDate": "2025-03-12",
+      "expiryDate": null,
+      "credentialId": "24P2DUS2MQWG",
+      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+      "url": "https://www.coursera.org/account/accomplishments/records/24P2DUS2MQWG",
+      "description": "Describe the purpose of different types of TypeScript operators, practice code in TypeScript playground, and understand arithmetic, logical, assignment, and comparison operators."
+    },
+    {
+      "id": "typescript-variables-data-types",
+      "name": "TypeScript Variables and Data Types",
+      "issuer": "Coursera Project Network",
+      "issueDate": "2025-03-02",
+      "expiryDate": null,
+      "credentialId": "4QJNMXVGCU4C",
+      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+      "url": "https://www.coursera.org/account/accomplishments/verify/4QJNMXVGCU4C",
+      "description": "Learn TypeScript variables and different ways to declare them, understand differences between var, let and const, scope of variables, and TypeScript data types."
+    }
+  ]
+}

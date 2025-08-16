@@ -1,0 +1,81 @@
+{
+  "clients": [
+    {
+      "id": "quicken",
+      "name": "Quicken",
+      "type": "company",
+      "industry": "Financial Software",
+      "url": "https://quicken.com"
+    },
+    {
+      "id": "wells-fargo",
+      "name": "Wells Fargo",
+      "type": "company",
+      "industry": "Banking & Financial Services",
+      "url": "https://wellsfargo.com"
+    },
+    {
+      "id": "nuffsaid",
+      "name": "Nuffsaid",
+      "type": "company",
+      "industry": "Workflow Intelligence",
+      "url": "https://nuffsaid.com"
+    },
+    {
+      "id": "linkedin",
+      "name": "LinkedIn",
+      "type": "company",
+      "industry": "Professional Networking",
+      "url": "https://linkedin.com"
+    },
+    {
+      "id": "personal-project",
+      "name": "Personal Project (D³)",
+      "type": "personal",
+      "industry": "Social Media Platform",
+      "url": null
+    },
+    {
+      "id": "rubicon-project",
+      "name": "The Rubicon Project",
+      "type": "company",
+      "industry": "Programmatic Advertising",
+      "url": "https://rubiconproject.com"
+    },
+    {
+      "id": "rosetta",
+      "name": "Rosetta",
+      "type": "company",
+      "industry": "Digital Marketing",
+      "url": "https://rosetta.com"
+    },
+    {
+      "id": "yahoo",
+      "name": "Yahoo!",
+      "type": "company",
+      "industry": "Technology & Media",
+      "url": "https://yahoo.com"
+    },
+    {
+      "id": "nokia",
+      "name": "Nokia",
+      "type": "company",
+      "industry": "Telecommunications",
+      "url": "https://nokia.com"
+    },
+    {
+      "id": "rooftop-media",
+      "name": "Rooftop Media",
+      "type": "company",
+      "industry": "Digital Media",
+      "url": "https://rooftopmedia.com"
+    },
+    {
+      "id": "solution-set",
+      "name": "Solution Set",
+      "type": "company",
+      "industry": "Digital Agency",
+      "url": "https://solutionset.com"
+    }
+  ]
+}

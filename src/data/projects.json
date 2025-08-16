@@ -1,0 +1,148 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Quicken.com Website Redesign",
+      "description": "Built responsive mobile-first page types and display components, reducing dependence on Wordpress and Drupal by 90%. Created product selection tools with React and Redux, increasing add-to-cart rate by 30%.",
+      "image": "/api/placeholder/400/250",
+      "category": "fullstack",
+      "clientId": "quicken",
+      "technologies": ["javascript", "html5", "css3", "sass", "react", "redux", "nodejs", "figma", "liquid", "contentful"],
+      "liveUrl": "https://quicken.com",
+      "githubUrl": "#",
+      "featured": true
+    },
+    {
+      "id": 2,
+      "title": "Wells Fargo Check Scanning App",
+      "description": "Developed check scanning mobile webapp with React, Redux, and REST APIs. Implemented accessible, responsive interfaces and robust state management with accessibility compliance.",
+      "image": "/api/placeholder/400/250",
+      "category": "frontend",
+      "clientId": "wells-fargo",
+      "technologies": ["react", "redux", "javascript", "css3", "figma", "axios", "rest"],
+      "liveUrl": "#",
+      "githubUrl": "#",
+      "featured": true
+    },
+    {
+      "id": 3,
+      "title": "Nuffsaid Workflow Intelligence Platform",
+      "description": "Built modular UI components for Workflow Intelligence Platform. Implemented client-side state management for customer signals and integrated third-party data from Gmail, Salesforce, and Slack.",
+      "image": "/api/placeholder/400/250",
+      "category": "frontend",
+      "clientId": "nuffsaid",
+      "technologies": ["react", "redux", "typescript", "css3", "jest", "figma", "rest"],
+      "liveUrl": "#",
+      "githubUrl": "#",
+      "featured": false
+    },
+    {
+      "id": 4,
+      "title": "LinkedIn Hiring Platform",
+      "description": "Provided front-end development for the LinkedIn Hiring Platform. Handled trouble tickets, developed new features, and participated in on-call rotations supporting the product.",
+      "image": "/api/placeholder/400/250",
+      "category": "frontend",
+      "clientId": "linkedin",
+      "technologies": ["html5", "css3", "javascript", "emberjs", "spa", "scrum"],
+      "liveUrl": "#",
+      "githubUrl": "#",
+      "featured": true
+    },
+    {
+      "id": 5,
+      "title": "LinkedIn HireIn Legacy System",
+      "description": "Provided front-end development for the company's legacy hiring system, HireIn. Fielded service requests from other divisions and provided user support.",
+      "image": "/api/placeholder/400/250",
+      "category": "frontend",
+      "clientId": "linkedin",
+      "technologies": ["html5", "css3", "javascript", "emberjs", "spa", "scrum", "nodejs"],
+      "liveUrl": "#",
+      "githubUrl": "#",
+      "featured": false
+    },
+    {
+      "id": 6,
+      "title": "D³ Social Media Platform",
+      "description": "Performed design & development for a personal research project conceiving a next-generation social media platform, code named D³.",
+      "image": "/api/placeholder/400/250",
+      "category": "fullstack",
+      "clientId": "personal-project",
+      "technologies": ["html5", "css3", "javascript", "react", "nextjs", "spa", "nodejs"],
+      "liveUrl": "#",
+      "githubUrl": "#",
+      "featured": false
+    },
+    {
+      "id": 7,
+      "title": "Rubicon Advertising Marketplace",
+      "description": "Worked on the Rubicon advertising marketplace application. Received functionality requirements from designers and produced JavaScript components. Participated in design review meetings.",
+      "image": "/api/placeholder/400/250",
+      "category": "frontend",
+      "clientId": "rubicon-project",
+      "technologies": ["html5", "css3", "javascript", "react", "jquery", "spa", "scrum", "nodejs"],
+      "liveUrl": "#",
+      "githubUrl": "#",
+      "featured": false
+    },
+    {
+      "id": 8,
+      "title": "Rosetta Responsive Web Properties",
+      "description": "Received screen mockups from designers and produced pixel-perfect HTML/CSS. Implemented responsive design requirements for mobile/tablet user-agents. Produced JavaScript components and mentored junior developers.",
+      "image": "/api/placeholder/400/250",
+      "category": "frontend",
+      "clientId": "rosetta",
+      "technologies": ["html5", "css3", "javascript", "jquery", "scrum", "responsive"],
+      "liveUrl": "#",
+      "githubUrl": "#",
+      "featured": false
+    },
+    {
+      "id": 9,
+      "title": "Yahoo! APT Advertising Platform",
+      "description": "Performed various maintenance and development tasks related to the company's advertising platform, APT. Investigated and documented user experience problems and developed solutions to them.",
+      "image": "/api/placeholder/400/250",
+      "category": "frontend",
+      "clientId": "yahoo",
+      "technologies": ["html5", "css3", "javascript", "yui", "spa", "scrum"],
+      "liveUrl": "#",
+      "githubUrl": "#",
+      "featured": false
+    },
+    {
+      "id": 10,
+      "title": "Nokia Ovi Organizer",
+      "description": "Received feature requirements and delivered front-end code solutions as part of the Ovi Organizer team.",
+      "image": "/api/placeholder/400/250",
+      "category": "frontend",
+      "clientId": "nokia",
+      "technologies": ["xhtml", "css2", "javascript", "jquery", "spa", "scrum"],
+      "liveUrl": "#",
+      "githubUrl": "#",
+      "featured": false
+    },
+    {
+      "id": 11,
+      "title": "Rooftop Media Web Properties",
+      "description": "Led the front-end design and development of several web properties, including SucksBox, 2009 National College Comedy Competition, rooftopmedia.net, and rooftopcomedy.com.",
+      "image": "/api/placeholder/400/250",
+      "category": "frontend",
+      "clientId": "rooftop-media",
+      "technologies": ["xhtml", "css2", "javascript", "jquery", "yui"],
+      "liveUrl": "#",
+      "githubUrl": "#",
+      "featured": false
+    },
+    {
+      "id": 12,
+      "title": "Solution Set Component Library",
+      "description": "Received screen mockups from designers and produced pixel-perfect HTML/CSS. Produced JavaScript components and participated in design review meetings. Maintained a JavaScript component library for internal use.",
+      "image": "/api/placeholder/400/250",
+      "category": "frontend",
+      "clientId": "solution-set",
+      "technologies": ["xhtml", "css2", "javascript", "prototypejs"],
+      "liveUrl": "#",
+      "githubUrl": "#",
+      "featured": false
+    }
+  ]
+}

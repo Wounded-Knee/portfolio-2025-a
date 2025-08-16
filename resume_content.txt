@@ -1,0 +1,125 @@
+Joel Kramer
+
+🇺🇸
+
++1 (707) 307-0965 | opportunities@jpkramer.com | linkedin.com/in/jpkramer707
+Hayward, California |
+US Citizen
+Certificates
+●​
+●​
+●​
+●​
+
+Advanced React by Meta
+Typescript by Scrimba
+Typescript Operators by Coursera
+Typescript Variables & Data Types by Coursera
+
+Work History
+Sr. Full-stack Software Engineer at Quicken,
+Remote (Contract)
+
+July 2022 - December 2024
+
+●​ Used Javascript, HTML, SASS, Figma, Jira, Flexbox, Grid, CSS Media Selectors, Node,
+Liquid, and Contentful to build a library of responsive mobile-first page types and display
+components, forming the building blocks of the new Quicken.com website, reducing
+dependence on Wordpress and Drupal by 90%.
+●​ Used React and Redux to create a product selection tool, increasing product add-to-cart rate
+by 30%
+●​ Used Liquid and SASS to create a recursive rendering engine to convert a JSON payload
+from Contentful headless CMS into HTML format, enabling website content editors to access
+a deeper dimension of layout control than ever before.
+●​ Used Figma to maintain pixel-perfect layout fidelity with project design specs, streamlining
+QA signoff and maintaining developer velocity.
+●​ Provided mentorship to junior engineers and performed routine liaison communications with
+other teams, reducing irritation and confusion during ZOOM meetings and standups.
+Sr. Front-end Software Engineer at Wells Fargo,
+Remote (Contract)
+
+November 2021 - June 2022
+
+●​ Used React, Redux, Axios, Jira, Figma, CSS, Javascript, and a secure REST API in
+developing a check scanning mobile webapp.
+●​ Collaborated with UX designers in Figma to translate designs into fully accessible,
+responsive, pixel-accurate interfaces with clean, maintainable CSS.
+●​ Developed robust Redux state logic to manage real-time scanning feedback, error handling,
+and user flow across multiple app states.
+
+●​ Conducted accessibility audits using tools such as Lighthouse, and manual screen reader
+testing (NVDA), proactively resolving issues prior to QA to maintain compliance with ADA
+and Section 508 guidelines.
+●​ Implemented dynamic form validation, improving usability for a diverse user base.
+●​ Used Jira for sprint planning, backlog grooming, and daily stand-ups, ensuring clear
+communication and alignment across remote teams.
+●​ Contributed to code reviews and documented component libraries, improving code reuse
+and onboarding time for new developers.
+Sr. Front-end Software Engineer at Nuffsaid,
+
+March 2021 - June 2021
+
+Remote (Contract)
+
+●​ Used React, Redux, TypeScript, and CSS to build modular UI components for the Workflow
+Intelligence Platform, resulting in a faster and more maintainable front-end codebase.
+●​ Used TypeScript and Redux to implement robust client-side state management for displaying
+prioritized customer signals, resulting in reduced noise and increased user focus.
+●​ Used React and RESTful APIs to integrate third-party data from Gmail, Salesforce, and
+Slack, resulting in a unified view of customer communications.
+●​ Used Figma specs and CSS to implement pixel-perfect, responsive layouts, resulting in
+improved design fidelity and reduced churn during design QA.
+●​ Created custom React hooks to encapsulate logic for signal prioritization and playbook
+delivery, resulting in cleaner code and accelerated onboarding for new engineers.
+●​ Routinely used Jest and React Testing Library to write unit and integration tests for key UI
+flows, resulting in greater confidence during rapid feature releases.
+●​ Used Agile processes and Jira to collaborate effectively with remote team members,
+resulting in consistent two-week sprint deliveries.
+Sr. Front-end Software Engineer at LinkedIn,
+Sunnyvale, CA (Contract)
+
+January 2018 - September 2020
+
+●​ Used Ember.js and Handlebars to build responsive UI components for LinkedIn Recruiter’s
+candidate search and pipeline tools, resulting in faster rendering and more maintainable
+interfaces.
+●​ Used SASS and LinkedIn’s proprietary design system to implement consistent, accessible
+layouts across complex multi-pane recruiter workflows, resulting in improved UX consistency
+and visual QA velocity.
+●​ Used JavaScript and QUnit to develop and test modular front-end logic, resulting in a
+reduction in UI regressions across core hiring funnel experiences.
+
+●​ Used feature flags and canary rollouts to deploy and test front-end changes in production
+with zero-downtime and minimal risk.
+Sr. Full-stack Software Engineer on Personal
+Project, (Sabbatical)
+
+November 2016 - January 2018
+
+●​ Used Next.js, Express, Node, MongoDB Atlas, React, Redux, Typescript, WebSockets and
+Emotion CSS to develop a full-stack collaborative decision-making platform for democratic
+government, manifesting a tangible representation of my own personal convictions and
+inspiration for the future of the western world in the 21st century.
+Sr. Front-end Software Engineer at The Rubicon
+Project, San Francisco, CA
+
+October 2013 - November 2016
+
+●​ Used Javascript, HTML, CSS, Backbone.js and Underscore.js to build structured single-page
+interfaces for the 49BC programmatic direct platform, resulting in smoother deal negotiation
+workflows and higher system responsiveness.
+●​ Used Underscore templating and jQuery to render dynamic views for packaging, inventory
+discovery, and reporting dashboards, resulting in faster page load times and improved user
+interaction.
+●​ Used Mocha and PhantomJS to implement and automate unit/integration tests for Backbone
+models and views, resulting in reduced production defects and more reliable deployments.
+●​ Used Grunt and RequireJS to bundle JavaScript modules, compile stylesheets, and run
+continuous integration pipelines, resulting in shorter build cycles and simplified local
+development.
+●​ Used AJAX and RESTful API calls to sync UI state with campaign data services, resulting in
+live updates across the deal lifecycle without requiring full page reloads.
+​
+
+​
+
+
