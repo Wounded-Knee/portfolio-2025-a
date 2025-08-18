@@ -58,27 +58,27 @@ const Skills = () => {
         
         {/* Skills Grid */}
         <div className="grid md:grid-cols-2 gap-8">
-          {skillCategories[activeCategory as keyof typeof skillCategories].skills.map((skillId, index) => {
-            const technology = technologiesMap.get(skillId);
-            return technology ? (
+          {skillCategories[activeCategory as keyof typeof skillCategories].skills
+            .map((skillId) => technologiesMap.get(skillId))
+            .filter((technology) => technology && technology.level > 0)
+            .map((technology, index) => (
               <div key={index} className="bg-white dark:bg-slate-800 rounded-lg p-6 shadow-sm">
                 <div className="flex justify-between items-center mb-2">
                   <span className="font-medium text-gray-900 dark:text-white">
-                    {technology.name}
+                    {technology!.name}
                   </span>
                   <span className="text-sm text-blue-600 dark:text-blue-400">
-                    {technology.level}%
+                    {technology!.level}%
                   </span>
                 </div>
                 <div className="w-full bg-gray-200 dark:bg-slate-700 rounded-full h-2">
                   <div
                     className="bg-gradient-to-r from-blue-500 to-blue-600 h-2 rounded-full transition-all duration-1000 ease-out"
-                    style={{ width: `${technology.level}%` }}
+                    style={{ width: `${technology!.level}%` }}
                   ></div>
                 </div>
               </div>
-            ) : null;
-          })}
+            ))}
         </div>
         
         {/* Additional Skills */}

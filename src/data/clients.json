@@ -5,77 +5,88 @@
       "name": "Quicken",
       "type": "company",
       "industry": "Financial Software",
-      "url": "https://quicken.com"
+      "url": "https://quicken.com",
+      "logo": "placeholder-logo.svg"
     },
     {
       "id": "wells-fargo",
       "name": "Wells Fargo",
       "type": "company",
       "industry": "Banking & Financial Services",
-      "url": "https://wellsfargo.com"
+      "url": "https://wellsfargo.com",
+      "logo": "placeholder-logo.svg"
     },
     {
       "id": "nuffsaid",
       "name": "Nuffsaid",
       "type": "company",
       "industry": "Workflow Intelligence",
-      "url": "https://nuffsaid.com"
+      "url": "https://nuffsaid.com",
+      "logo": "placeholder-logo.svg"
     },
     {
       "id": "linkedin",
       "name": "LinkedIn",
       "type": "company",
       "industry": "Professional Networking",
-      "url": "https://linkedin.com"
+      "url": "https://linkedin.com",
+      "logo": "placeholder-logo.svg"
     },
     {
       "id": "personal-project",
       "name": "Personal Project (D³)",
       "type": "personal",
       "industry": "Social Media Platform",
-      "url": null
+      "url": null,
+      "logo": "placeholder-logo.svg"
     },
     {
       "id": "rubicon-project",
       "name": "The Rubicon Project",
       "type": "company",
       "industry": "Programmatic Advertising",
-      "url": "https://rubiconproject.com"
+      "url": "https://rubiconproject.com",
+      "logo": "placeholder-logo.svg"
     },
     {
       "id": "rosetta",
       "name": "Rosetta",
       "type": "company",
       "industry": "Digital Marketing",
-      "url": "https://rosetta.com"
+      "url": "https://rosetta.com",
+      "logo": "placeholder-logo.svg"
     },
     {
       "id": "yahoo",
       "name": "Yahoo!",
       "type": "company",
       "industry": "Technology & Media",
-      "url": "https://yahoo.com"
+      "url": "https://yahoo.com",
+      "logo": "placeholder-logo.svg"
     },
     {
       "id": "nokia",
       "name": "Nokia",
       "type": "company",
       "industry": "Telecommunications",
-      "url": "https://nokia.com"
+      "url": "https://nokia.com",
+      "logo": "placeholder-logo.svg"
     },
     {
       "id": "rooftop-media",
       "name": "Rooftop Media",
       "type": "company",
       "industry": "Digital Media",
-      "url": "https://rooftopmedia.com"
+      "url": "https://rooftopmedia.com",
+      "logo": "placeholder-logo.svg"
     },
     {
       "id": "solution-set",
       "name": "Solution Set",
       "type": "company",
       "industry": "Digital Agency",
-      "url": "https://solutionset.com"
+      "url": "https://solutionset.com",
+      "logo": "placeholder-logo.svg"
     }
   ]
 }

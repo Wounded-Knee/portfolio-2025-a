@@ -10,6 +10,14 @@ export const metadata: Metadata = {
   keywords: ["Software Engineer", "Full-Stack", "Frontend", "React", "Next.js", "TypeScript"],
   authors: [{ name: "Joel Kramer" }],
   creator: "Joel Kramer",
+  icons: {
+    icon: [
+      { url: '/favicon.ico', type: 'image/gif' },
+      { url: '/favicon.ico', type: 'image/x-icon' }
+    ],
+    shortcut: '/favicon.ico',
+    apple: '/favicon.ico',
+  },
   openGraph: {
     title: "Joel Kramer - Senior Full-Stack Software Engineer",
     description: "Frontend-focused Senior Full-Stack Software Engineer with expertise in React, Next.js, TypeScript, and modern web technologies.",
@@ -29,6 +37,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        <link rel="icon" type="image/gif" href="/favicon.ico" />
+        <link rel="shortcut icon" type="image/gif" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/favicon.ico" />
+      </head>
       <body className={`${inter.className} antialiased`}>
         {children}
       </body>

@@ -156,21 +156,7 @@ const Projects = () => {
                       })}
                     </div>
                     
-                    {/* Project Links */}
-                    <div className="flex space-x-4">
-                      <button
-                        onClick={() => openCaseStudy(project.id)}
-                        className="flex-1 bg-blue-600 hover:bg-blue-700 text-white text-center py-2 px-4 rounded-lg font-medium transition-colors duration-200"
-                      >
-                        Case Study
-                      </button>
-                      <a
-                        href={project.githubUrl}
-                        className="flex-1 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-slate-700 text-center py-2 px-4 rounded-lg font-medium transition-colors duration-200"
-                      >
-                        GitHub
-                      </a>
-                    </div>
+
                   </div>
                 </div>
               );

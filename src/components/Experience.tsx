@@ -1,9 +1,16 @@
+"use client";
+
 import technologiesData from '../data/technologies.json';
 import experiencesData from '../data/experiences.json';
 import clientsData from '../data/clients.json';
-import { Experience as ExperienceType } from '../types';
+import { Experience as ExperienceType, Client } from '../types';
+import { getLogoUrl } from '../config/logo';
+import { useDisplay } from '../hooks/useDisplay';
+import { extractDomain } from '../utils/url';
 
 const Experience = () => {
+  const { isRetina, isDarkMode } = useDisplay();
+
   // Create a map for quick technology lookup by ID
   const technologiesMap = new Map(
     technologiesData.technologies.map(tech => [tech.id, tech.name])
@@ -11,7 +18,7 @@ const Experience = () => {
 
   // Create a map for quick client lookup by ID
   const clientsMap = new Map(
-    clientsData.clients.map(client => [client.id, client.name])
+    clientsData.clients.map(client => [client.id, client as Client])
   );
 
   const experiences = experiencesData.experiences as ExperienceType[];
@@ -28,7 +35,17 @@ const Experience = () => {
         
         <div className="space-y-8">
           {experiences.map((experience, index) => {
-            const companyName = clientsMap.get(experience.clientId);
+            const client = clientsMap.get(experience.clientId);
+            const domain = extractDomain(client?.url || null);
+            const logoUrl = domain 
+              ? getLogoUrl(
+                  domain, 
+                  64, 
+                  isDarkMode ? 'dark' : 'light', 
+                  isRetina
+                )
+              : null;
+
             return (
               <div key={index} className="relative">
                 {/* Timeline line */}
@@ -37,9 +54,23 @@ const Experience = () => {
                 )}
                 
                 <div className="flex items-start space-x-6">
-                  {/* Timeline dot */}
-                  <div className="flex-shrink-0 w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center">
-                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  {/* Client Logo */}
+                  <div className="flex-shrink-0 w-12 h-12 bg-white dark:bg-slate-800 rounded-full flex items-center justify-center shadow-lg border-2 border-gray-200 dark:border-slate-600 overflow-hidden">
+                    {logoUrl ? (
+                      <img
+                        src={logoUrl}
+                        alt={`${client?.name} logo`}
+                        className="w-12 h-12 object-contain"
+                        onError={(e) => {
+                          // Fallback to default icon if logo fails to load
+                          const target = e.target as HTMLImageElement;
+                          target.style.display = 'none';
+                          target.nextElementSibling?.classList.remove('hidden');
+                        }}
+                      />
+                    ) : null}
+                    {/* Fallback icon */}
+                    <svg className="w-6 h-6 text-blue-600 dark:text-blue-400 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0V6a2 2 0 012 2v6a2 2 0 01-2 2H8a2 2 0 01-2-2V8a2 2 0 012-2V6" />
                     </svg>
                   </div>
@@ -56,7 +87,7 @@ const Experience = () => {
                     </div>
                     
                     <h4 className="text-lg text-gray-700 dark:text-gray-300 mb-3">
-                      {companyName}
+                      {client?.name}
                     </h4>
                     
                     <div className="flex items-center gap-4 mb-4 text-sm text-gray-600 dark:text-gray-400">

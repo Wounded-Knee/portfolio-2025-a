@@ -5,6 +5,7 @@ import Projects from '@/components/Projects';
 import Skills from '@/components/Skills';
 import Certifications from '@/components/Certifications';
 import Contact from '@/components/Contact';
+import Footer from '@/components/Footer';
 import Navigation from '@/components/Navigation';
 
 export default function Home() {
@@ -14,12 +15,13 @@ export default function Home() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <Hero />
         <About />
-        <Experience />
-        <Skills />
-        <Certifications />
         <Projects />
+        <Certifications />
+        <Skills />
+        <Experience />
         <Contact />
       </div>
+      <Footer />
     </main>
   );
 }

@@ -1,4 +1,48 @@
+import experiencesData from '../data/experiences.json';
+import technologiesData from '../data/technologies.json';
+import clientsData from '../data/clients.json';
+import certificationsData from '../data/certifications.json';
+
 const About = () => {
+  // Calculate statistics dynamically
+  const calculateYearsExperience = () => {
+    const experiences = experiencesData.experiences;
+    if (experiences.length === 0) return 0;
+    
+    // Get the earliest experience date
+    const earliestDate = new Date(experiences[experiences.length - 1].period.split(' - ')[0]);
+    const currentDate = new Date();
+    const yearsDiff = currentDate.getFullYear() - earliestDate.getFullYear();
+    
+    return Math.max(yearsDiff, 1); // Minimum 1 year
+  };
+
+  const calculateMajorCompanies = () => {
+    // Count unique companies (excluding personal projects)
+    const companyIds = new Set(
+      experiencesData.experiences
+        .map(exp => exp.clientId)
+        .filter(clientId => {
+          const client = clientsData.clients.find(c => c.id === clientId);
+          return client && client.type === 'company';
+        })
+    );
+    return companyIds.size;
+  };
+
+  const calculateTechnologies = () => {
+    return technologiesData.technologies.length;
+  };
+
+  const calculateCertifications = () => {
+    return certificationsData.certifications.length;
+  };
+
+  const yearsExperience = calculateYearsExperience();
+  const majorCompanies = calculateMajorCompanies();
+  const technologies = calculateTechnologies();
+  const certifications = calculateCertifications();
+
   return (
     <section id="about" className="py-20">
       <div className="max-w-6xl mx-auto px-4">
@@ -13,7 +57,7 @@ const About = () => {
           {/* Text Content */}
           <div className="space-y-6">
             <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-              I'm a Senior Front-End Software Engineer with over 10 years of experience 
+              I'm a Senior Front-End Software Engineer with over {yearsExperience} years of experience 
               building responsive, accessible web applications. My expertise lies in React, TypeScript, 
               and modern frontend technologies, with a strong focus on user experience and performance.
             </p>
@@ -34,19 +78,19 @@ const About = () => {
             {/* Key Highlights */}
             <div className="grid grid-cols-2 gap-4 pt-6">
               <div className="text-center p-4 bg-white dark:bg-slate-800 rounded-lg shadow-sm">
-                <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">10+</div>
+                <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">{yearsExperience}+</div>
                 <div className="text-sm text-gray-600 dark:text-gray-400">Years Experience</div>
               </div>
               <div className="text-center p-4 bg-white dark:bg-slate-800 rounded-lg shadow-sm">
-                <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">6</div>
+                <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">{majorCompanies}</div>
                 <div className="text-sm text-gray-600 dark:text-gray-400">Major Companies</div>
               </div>
               <div className="text-center p-4 bg-white dark:bg-slate-800 rounded-lg shadow-sm">
-                <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">30+</div>
+                <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">{technologies}+</div>
                 <div className="text-sm text-gray-600 dark:text-gray-400">Technologies</div>
               </div>
               <div className="text-center p-4 bg-white dark:bg-slate-800 rounded-lg shadow-sm">
-                <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">4</div>
+                <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">{certifications}</div>
                 <div className="text-sm text-gray-600 dark:text-gray-400">Certifications</div>
               </div>
             </div>

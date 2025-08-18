@@ -19,7 +19,10 @@ export interface Technology {
 export interface Client {
   id: string;
   name: string;
-  logo?: string;
+  type: string;
+  industry: string;
+  url: string | null;
+  logo: string;
 }
 
 export interface Certification {
