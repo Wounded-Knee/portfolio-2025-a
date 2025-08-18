@@ -36,3 +36,14 @@ export interface Certification {
   url: string;
   description: string;
 }
+
+export interface Testimonial {
+  id: string;
+  name: string;
+  date: string;
+  photo: string;
+  currentRole: string;
+  currentCompany: string;
+  relationship: string;
+  testimony: string;
+}

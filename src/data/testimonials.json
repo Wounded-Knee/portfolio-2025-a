@@ -1,0 +1,34 @@
+{
+  "testimonials": [
+    {
+      "id": "trupti-chowksey",
+      "name": "Trupti Chowksey",
+      "date": "November 20, 2024",
+      "photo": "trupti-chowksey.jpg",
+      "currentRole": "Senior Web Manager",
+      "currentCompany": "Quicken",
+      "relationship": "Worked with Joel but on different teams",
+      "testimony": "I had the privilege of working with Joel Kramer during our time at Quicken, and I can confidently say that Joel is an outstanding Senior UI Developer who brings immense value to any team he is part of. Joel's technical expertise and creative problem-solving skills are truly exceptional. His ability to design intuitive and user-centric interfaces ensures that every project he contributes to not only meets but exceeds expectations.\n\nJoel's collaborative approach and excellent skills make him an invaluable team player. He has a knack for aligning cross-functional teams, keeping everyone on the same page, and ensuring seamless progress through every stage of development. His patience, willingness to mentor, and approachable demeanor create an environment where innovation thrives. He has worked on so many complicated tasks and did them on time with so much dedication.\n\nWhat sets Joel apart is his meticulous attention to detail and commitment to delivering high-quality results. He is proactive in identifying potential challenges and always offers practical, well-thought-out solutions that drive success. His dedication to staying ahead of emerging trends and technologies demonstrates his passion for continuous improvement and growth.\n\nWorking with Joel was a truly rewarding experience, and I am grateful for his insights and professionalism. I wholeheartedly recommend him as a talented, dependable, and visionary Senior UI Developer. Joel is undoubtedly an asset to any organization fortunate enough to have him on board."
+    },
+    {
+      "id": "milena-pavlova",
+      "name": "Milena Pavlova",
+      "date": "March 23, 2023",
+      "photo": "milena-pavlova.jpg",
+      "currentRole": "Solutions Architect",
+      "currentCompany": "AMP Agency",
+      "relationship": "Worked with Joel on the same team",
+      "testimony": "I had the pleasure of working with Joel for several years at SolutionSet, and during that time he was an integral part of our team. He worked well with everyone, always willing to share his insights and provide guidance to others. Joel was a problem solver, contributing exceptional work, consistently meeting deadlines.\n\nI am pleased that Joel was able to grow and expand his skills over the years, and any team or organization would be lucky to have him on board."
+    },
+    {
+      "id": "robert-nowell",
+      "name": "Robert Nowell",
+      "date": "March 9, 2023",
+      "photo": "robert-nowell.jpg",
+      "currentRole": "Cofounder",
+      "currentCompany": "Kopi AI",
+      "relationship": "Worked with Joel on the same team",
+      "testimony": "Joel was a highly competent and valued member of our team at LinkedIn. He's a steady pair of hands on the frontend, was always happy to answer questions, and mentored me in UI engineering early in my career. I look forward to working with him again before long."
+    }
+  ]
+}
