@@ -4,7 +4,7 @@ import technologiesData from '../data/technologies.json';
 import experiencesData from '../data/experiences.json';
 import clientsData from '../data/clients.json';
 import { Experience as ExperienceType, Client } from '../types';
-import { getLogoUrl } from '../config/logo';
+import { getLogoUrl } from '../utils/logo';
 import { useDisplay } from '../hooks/useDisplay';
 import { extractDomain } from '../utils/url';
 
