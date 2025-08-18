@@ -41,6 +41,14 @@
       "logo": "placeholder-logo.svg"
     },
     {
+      "id": "portfolio-2025",
+      "name": "Personal Portfolio (2025)",
+      "type": "personal",
+      "industry": "Portfolio & Personal Branding",
+      "url": null,
+      "logo": "placeholder-logo.svg"
+    },
+    {
       "id": "rubicon-project",
       "name": "The Rubicon Project",
       "type": "company",

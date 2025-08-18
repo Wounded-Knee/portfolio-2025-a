@@ -412,6 +412,48 @@
       "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scrum/scrum-original.svg",
       "url": "https://www.scrum.org/",
       "level": 0
+    },
+    {
+      "id": "shadcn-ui",
+      "name": "Shadcn/UI",
+      "logo": "https://ui.shadcn.com/favicon.ico",
+      "url": "https://ui.shadcn.com/",
+      "level": 85
+    },
+    {
+      "id": "posthog",
+      "name": "PostHog",
+      "logo": "https://posthog.com/favicon.ico",
+      "url": "https://posthog.com/",
+      "level": 80
+    },
+    {
+      "id": "cloudfront",
+      "name": "AWS CloudFront",
+      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg",
+      "url": "https://aws.amazon.com/cloudfront/",
+      "level": 75
+    },
+    {
+      "id": "s3",
+      "name": "AWS S3",
+      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg",
+      "url": "https://aws.amazon.com/s3/",
+      "level": 80
+    },
+    {
+      "id": "github-actions",
+      "name": "GitHub Actions",
+      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+      "url": "https://github.com/features/actions",
+      "level": 85
+    },
+    {
+      "id": "svg",
+      "name": "SVG",
+      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/svg/svg-original.svg",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/SVG",
+      "level": 90
     }
   ]
 }

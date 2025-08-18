@@ -22,6 +22,14 @@ const Navigation = () => {
     const isDark = document.documentElement.classList.contains('dark');
     setIsDarkMode(isDark);
 
+    // Check initial scroll position
+    const checkInitialScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    // Check scroll position immediately
+    checkInitialScroll();
+
     // Listen for scroll
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
