@@ -19,12 +19,12 @@ const Hero = () => {
           </p>
           
           {/* Name */}
-          <h1 className="text-5xl md:text-7xl font-bold text-gray-900 dark:text-white mb-6">
-            Joel Kramer
+          <h1 className="text-5xl md:text-7xl font-bold text-gray-900 dark:text-white mb-6 font-cinzel">
+            JP Kramer
           </h1>
           
           {/* Title */}
-          <h2 className="text-2xl md:text-3xl text-gray-600 dark:text-gray-300 mb-8 font-light">
+          <h2 className="text-2xl md:text-3xl text-gray-600 dark:text-gray-300 mb-8 font-light" style={{ fontFamily: 'Inter, sans-serif' }}>
             Senior Front-End Software Engineer
           </h2>
           

@@ -61,8 +61,8 @@ const Navigation = () => {
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="text-xl font-bold text-gray-900 dark:text-white">
-            Joel Kramer
+          <div className="text-xl font-bold text-gray-900 dark:text-white font-cinzel">
+            JP Kramer
           </div>
           
           {/* Desktop Navigation Links */}

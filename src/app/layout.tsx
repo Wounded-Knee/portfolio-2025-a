@@ -41,6 +41,8 @@ export default function RootLayout({
         <link rel="icon" type="image/gif" href="/favicon.ico" />
         <link rel="shortcut icon" type="image/gif" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/favicon.ico" />
+        {/* Adobe Fonts - Cinzel */}
+        <link rel="stylesheet" href="https://use.typekit.net/get8iyo.css" />
       </head>
       <body className={`${inter.className} antialiased`}>
         {children}

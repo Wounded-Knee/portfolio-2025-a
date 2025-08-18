@@ -1,3 +1,4 @@
+@import url('https://use.typekit.net/get8iyo.css');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -47,26 +48,45 @@
     --input: 217.2 32.6% 17.5%;
     --ring: 224.3 76.3% 94.1%;
   }
-}
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  /* Cinzel font classes */
+  .font-cinzel {
+    font-family: 'cinzel', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  /* Apply Cinzel to all h1 and h2 elements */
+  h1, h2 {
+    font-family: 'cinzel', sans-serif;
+    font-weight: 400;
+    font-style: normal;
   }
 }
 
 @layer components {
-  @keyframes scroll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-50%);
-    }
+  .btn-primary {
+    @apply bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200;
   }
-
-  .animate-scroll {
-    animation: scroll 30s linear infinite;
+  
+  .btn-secondary {
+    @apply bg-gray-200 hover:bg-gray-300 dark:bg-slate-700 dark:hover:bg-slate-600 text-gray-900 dark:text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200;
+  }
+  
+  .section-title {
+    @apply text-4xl font-bold text-gray-900 dark:text-white mb-4 font-cinzel;
+  }
+  
+  .section-subtitle {
+    @apply text-2xl font-semibold text-gray-900 dark:text-white mb-4 font-cinzel;
   }
 }
 
