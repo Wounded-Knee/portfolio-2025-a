@@ -72,7 +72,7 @@ const Navigation = () => {
       <nav className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent">
         <div className="max-w-6xl mx-auto px-4">
           <div className="flex items-center justify-between h-16">
-            <div className="text-xl font-bold text-gray-900 font-cinzel">
+            <div className={`text-xl font-bold text-gray-900 font-cinzel ${isScrolled ? 'opacity-100' : 'opacity-0'} transition-opacity ${isScrolled ? 'duration-5000' : 'duration-500'}`}>
               JP Kramer
             </div>
             <div className="hidden md:flex items-center space-x-8">
@@ -108,7 +108,7 @@ const Navigation = () => {
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="text-xl font-bold text-gray-900 dark:text-white font-cinzel">
+          <div className={`text-xl font-bold text-white font-cinzel ${isScrolled ? 'opacity-100' : 'opacity-0'} transition-opacity ${isScrolled ? 'duration-5000' : 'duration-500'}`}>
             JP Kramer
           </div>
           
