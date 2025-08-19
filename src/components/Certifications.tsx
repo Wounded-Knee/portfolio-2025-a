@@ -70,9 +70,7 @@ const Certifications = () => {
           </p>
         </div>
         
-        <div className="grid gap-6" style={{
-          gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))'
-        }}>
+        <div className="grid gap-6 grid-cols-1 md:grid-cols-2">
           {certifications.map((certification) => (
             <div
               key={certification.id}

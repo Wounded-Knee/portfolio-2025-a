@@ -131,7 +131,7 @@ const Projects = () => {
                       </div>
                     )}
                     {project.featured && (
-                      <div className="absolute top-4 right-4 bg-yellow-500 text-white px-2 py-1 rounded-full text-xs font-medium">
+                      <div className="absolute top-4 right-4 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-2 py-1 rounded-full text-xs font-medium">
                         Featured
                       </div>
                     )}

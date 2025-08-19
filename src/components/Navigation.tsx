@@ -6,6 +6,7 @@ const Navigation = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
   const navItems = [
     { name: 'About', href: '#about' },
@@ -18,9 +19,10 @@ const Navigation = () => {
   ];
 
   useEffect(() => {
-    // Check initial dark mode
+    // Check initial dark mode from document class
     const isDark = document.documentElement.classList.contains('dark');
     setIsDarkMode(isDark);
+    setMounted(true);
 
     // Check initial scroll position
     const checkInitialScroll = () => {
@@ -43,12 +45,16 @@ const Navigation = () => {
     const newMode = !isDarkMode;
     setIsDarkMode(newMode);
     
-    if (newMode) {
-      document.documentElement.classList.add('dark');
-      localStorage.setItem('theme', 'dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-      localStorage.setItem('theme', 'light');
+    try {
+      if (newMode) {
+        document.documentElement.classList.add('dark');
+        localStorage.setItem('theme', 'dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+        localStorage.setItem('theme', 'light');
+      }
+    } catch (error) {
+      console.warn('Failed to save theme to localStorage:', error);
     }
   };
 
@@ -59,6 +65,39 @@ const Navigation = () => {
     }
     setIsMobileMenuOpen(false);
   };
+
+  // Don't render theme-dependent content until mounted to prevent hydration mismatch
+  if (!mounted) {
+    return (
+      <nav className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="flex items-center justify-between h-16">
+            <div className="text-xl font-bold text-gray-900 font-cinzel">
+              JP Kramer
+            </div>
+            <div className="hidden md:flex items-center space-x-8">
+              {navItems.map((item) => (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  className="text-gray-700 hover:text-blue-600 transition-colors duration-200"
+                >
+                  {item.name}
+                </a>
+              ))}
+            </div>
+            <div className="hidden md:flex items-center">
+              <div className="p-2 rounded-lg bg-gray-100 text-gray-700 w-9 h-9"></div>
+            </div>
+            <div className="md:hidden flex items-center space-x-2">
+              <div className="p-2 rounded-lg bg-gray-100 text-gray-700 w-9 h-9"></div>
+              <div className="w-6 h-6"></div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    );
+  }
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${

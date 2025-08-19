@@ -13,7 +13,7 @@ export const useDisplay = () => {
       setIsRetina(mediaQuery.matches);
     };
 
-    // Detect dark mode
+    // Detect dark mode from document class
     const checkDarkMode = () => {
       const isDark = document.documentElement.classList.contains('dark');
       setIsDarkMode(isDark);
