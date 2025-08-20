@@ -10,7 +10,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center pt-16">
+    <section id="home" className="min-h-screen flex items-center justify-center pt-16" aria-labelledby="hero-heading">
       <div className="text-center max-w-4xl mx-auto px-4">
         <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           {/* Greeting */}
@@ -19,7 +19,7 @@ const Hero = () => {
           </p>
           
           {/* Name */}
-          <h1 className="text-5xl md:text-7xl font-bold text-gray-900 dark:text-white mb-6 font-cinzel">
+          <h1 id="hero-heading" className="text-5xl md:text-7xl font-bold text-gray-900 dark:text-white mb-6 font-cinzel">
             JP Kramer
           </h1>
           
@@ -38,13 +38,15 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <button 
               onClick={() => document.querySelector('#projects')?.scrollIntoView({ behavior: 'smooth' })}
-              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-medium transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-medium transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-white dark:focus:ring-offset-slate-900"
+              aria-label="View my portfolio projects"
             >
               View My Work
             </button>
             <button 
               onClick={() => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })}
-              className="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-8 py-3 rounded-lg font-medium transition-all duration-200 transform hover:scale-105"
+              className="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-8 py-3 rounded-lg font-medium transition-all duration-200 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-white dark:focus:ring-offset-slate-900"
+              aria-label="Contact me for opportunities"
             >
               Get In Touch
             </button>
@@ -64,6 +66,7 @@ const Hero = () => {
                 setIsVisible(false);
               }
             }}
+            aria-hidden="true"
           >
             <svg className="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />

@@ -89,6 +89,51 @@ Update the following files to customize the portfolio:
 - `src/components/Projects.tsx` - Update portfolio projects
 - `src/components/Contact.tsx` - Update contact information
 
+### 📊 Data Management
+
+All professional data for the portfolio is stored in JSON files within the `src/data/` directory. This approach allows for easy content management and updates without modifying the core application code.
+
+#### JSON Data Files
+
+- **`projects.json`** - Portfolio projects and case studies
+  - Contains project details including title, description, technologies used, live URLs, GitHub links, and featured status
+  - Each project is linked to a client via `clientId`
+  - Includes image references and categorization (frontend, fullstack, etc.)
+
+- **`experiences.json`** - Work experience and employment history
+  - Job titles, company information, time periods, and role descriptions
+  - Technology stacks used in each position
+  - Remote work status and location information
+  - Linked to clients via `clientId`
+
+- **`clients.json`** - Company and client information
+  - Company names, logos, and website URLs
+  - Client categorization and relationship details
+  - Used to populate project and experience sections
+
+- **`technologies.json`** - Technical skills and proficiency levels
+  - Technology names, logos, and official documentation URLs
+  - Proficiency levels (0-100 scale) for skill assessment
+  - Used across projects, experiences, and skills sections
+
+- **`testimonials.json`** - Client and colleague testimonials
+  - Quote content, author information, and professional titles
+  - Company affiliations and testimonial photos
+  - Featured status for priority display
+
+- **`certifications.json`** - Professional certifications and achievements
+  - Certification names, issuing organizations, and dates
+  - Credential IDs and verification URLs
+  - Expiration dates and renewal information
+
+### Data Structure Benefits
+
+- **Separation of Concerns**: Content is separated from presentation logic
+- **Easy Updates**: Modify JSON files to update portfolio content without touching code
+- **Version Control**: Track content changes separately from application changes
+- **Reusability**: Data can be easily exported or imported for other applications
+- **Consistency**: Centralized data ensures consistency across all portfolio sections
+
 ### Styling
 
 The project uses Tailwind CSS with custom CSS variables for theming. Main styling files:
@@ -149,6 +194,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
+
 ## 📞 Contact
 
-For questions or support, please reach out to Joel Kramer at joel.kramer@example.com
+For questions or support, please reach out to Joel Kramer at jpkramer707_github@mm.st

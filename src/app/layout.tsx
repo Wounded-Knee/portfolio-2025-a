@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
@@ -28,6 +28,16 @@ export const metadata: Metadata = {
     title: "Joel Kramer - Senior Full-Stack Software Engineer",
     description: "Frontend-focused Senior Full-Stack Software Engineer with expertise in React, Next.js, TypeScript, and modern web technologies.",
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#2563eb",
 };
 
 export default function RootLayout({
@@ -68,6 +78,13 @@ export default function RootLayout({
         />
       </head>
       <body className={`${inter.className} antialiased`}>
+        {/* Skip to main content link for screen readers */}
+        <a 
+          href="#main-content" 
+          className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-blue-600 text-white px-4 py-2 rounded-lg z-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+        >
+          Skip to main content
+        </a>
         {children}
       </body>
     </html>
