@@ -8,6 +8,27 @@ export interface Experience {
   location: string;
 }
 
+export interface CaseStudy {
+  situation: string[];
+  task: string[];
+  action: string[];
+  result: string[];
+}
+
+export interface Project {
+  id: number;
+  title: string;
+  description: string;
+  image: string | null;
+  category: string;
+  clientId: string;
+  technologies: string[];
+  liveUrl?: string;
+  githubUrl?: string;
+  featured?: boolean;
+  caseStudy?: CaseStudy;
+}
+
 export interface Technology {
   id: string;
   name: string;

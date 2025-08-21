@@ -103,7 +103,7 @@ const Skills = () => {
             ].map((skill, index) => (
               <div
                 key={index}
-                className="bg-white dark:bg-slate-800 rounded-lg p-4 text-center shadow-sm hover:shadow-md transition-shadow duration-200"
+                className="bg-white dark:bg-slate-800 rounded-lg p-4 text-center shadow-sm hover:shadow-md transition-shadow duration-200 flex items-center justify-center"
                 role="listitem"
               >
                 <span className="text-gray-700 dark:text-gray-300 font-medium text-sm">

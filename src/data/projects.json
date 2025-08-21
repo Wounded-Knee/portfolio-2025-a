@@ -4,13 +4,14 @@
       "id": 1,
       "title": "Personal Portfolio (2025)",
       "description": "Designed and implemented a fully-featured personal portfolio application to showcase professional work history, technical expertise, and creative projects. The portfolio itself serves as a living demonstration of software engineering ability—covering everything from UI design and branding to CI/CD and cloud deployment. Features include responsive design with light/dark themes, custom SVG logo design, PostHog analytics integration, and secure AWS deployment with CloudFront CDN.",
-      "image": null,
+      "image": "portfolio-1.png",
       "category": "fullstack",
-      "clientId": "portfolio-2025",
+      "clientId": "jpkramer",
       "technologies": ["nextjs", "react", "typescript", "tailwindcss", "shadcn-ui", "svg", "aws", "s3", "cloudfront", "github-actions", "posthog", "git"],
       "liveUrl": "#",
-      "githubUrl": "#",
-      "featured": true
+      "githubUrl": "https://github.com/Wounded-Knee/portfolio-2025-a/",
+      "featured": true,
+      "dateCompleted": "January 2025"
     },
     {
       "id": 2,
@@ -21,8 +22,9 @@
       "clientId": "quicken",
       "technologies": ["javascript", "html5", "css3", "sass", "react", "redux", "nodejs", "figma", "liquid", "contentful"],
       "liveUrl": "https://quicken.com",
-      "githubUrl": "#",
-      "featured": true
+      "githubUrl": null,
+      "featured": true,
+      "dateCompleted": "December 2024"
     },
     {
       "id": 3,
@@ -33,8 +35,9 @@
       "clientId": "wells-fargo",
       "technologies": ["react", "redux", "javascript", "css3", "figma", "axios", "rest"],
       "liveUrl": "#",
-      "githubUrl": "#",
-      "featured": false
+      "githubUrl": null,
+      "featured": false,
+      "dateCompleted": "June 2022"
     },
     {
       "id": 4,
@@ -45,8 +48,9 @@
       "clientId": "nuffsaid",
       "technologies": ["react", "redux", "typescript", "css3", "jest", "figma", "rest"],
       "liveUrl": "#",
-      "githubUrl": "#",
-      "featured": false
+      "githubUrl": null,
+      "featured": false,
+      "dateCompleted": "June 2021"
     },
     {
       "id": 5,
@@ -57,8 +61,9 @@
       "clientId": "linkedin",
       "technologies": ["html5", "css3", "javascript", "emberjs", "spa", "scrum"],
       "liveUrl": "#",
-      "githubUrl": "#",
-      "featured": false
+      "githubUrl": null,
+      "featured": false,
+      "dateCompleted": "September 2020"
     },
     {
       "id": 6,
@@ -69,8 +74,9 @@
       "clientId": "linkedin",
       "technologies": ["html5", "css3", "javascript", "emberjs", "spa", "scrum", "nodejs"],
       "liveUrl": "#",
-      "githubUrl": "#",
-      "featured": false
+      "githubUrl": null,
+      "featured": false,
+      "dateCompleted": "January 2019"
     },
     {
       "id": 7,
@@ -81,8 +87,9 @@
       "clientId": "personal-project",
       "technologies": ["html5", "css3", "javascript", "react", "nextjs", "spa", "nodejs"],
       "liveUrl": "#",
-      "githubUrl": "#",
-      "featured": false
+      "githubUrl": null,
+      "featured": false,
+      "dateCompleted": "January 2018"
     },
     {
       "id": 8,
@@ -93,8 +100,9 @@
       "clientId": "rubicon-project",
       "technologies": ["html5", "css3", "javascript", "react", "jquery", "spa", "scrum", "nodejs"],
       "liveUrl": "#",
-      "githubUrl": "#",
-      "featured": false
+      "githubUrl": null,
+      "featured": false,
+      "dateCompleted": "November 2016"
     },
     {
       "id": 9,
@@ -105,20 +113,22 @@
       "clientId": "rosetta",
       "technologies": ["html5", "css3", "javascript", "jquery", "scrum", "responsive"],
       "liveUrl": "#",
-      "githubUrl": "#",
-      "featured": false
+      "githubUrl": null,
+      "featured": false,
+      "dateCompleted": "July 2013"
     },
     {
       "id": 10,
       "title": "Yahoo! APT Advertising Platform",
       "description": "Performed various maintenance and development tasks related to the company's advertising platform, APT. Investigated and documented user experience problems and developed solutions to them.",
-      "image": null,
+      "image": "apt-1.png",
       "category": "frontend",
       "clientId": "yahoo",
       "technologies": ["html5", "css3", "javascript", "yui", "spa", "scrum"],
       "liveUrl": "#",
-      "githubUrl": "#",
-      "featured": false
+      "githubUrl": null,
+      "featured": false,
+      "dateCompleted": "April 2012"
     },
     {
       "id": 11,
@@ -129,8 +139,9 @@
       "clientId": "nokia",
       "technologies": ["xhtml", "css2", "javascript", "jquery", "spa", "scrum"],
       "liveUrl": "#",
-      "githubUrl": "#",
-      "featured": false
+      "githubUrl": null,
+      "featured": false,
+      "dateCompleted": "April 2010"
     },
     {
       "id": 12,
@@ -141,8 +152,9 @@
       "clientId": "rooftop-media",
       "technologies": ["xhtml", "css2", "javascript", "jquery", "yui"],
       "liveUrl": "#",
-      "githubUrl": "#",
-      "featured": false
+      "githubUrl": null,
+      "featured": false,
+      "dateCompleted": "October 2009"
     },
     {
       "id": 13,
@@ -153,17 +165,119 @@
       "clientId": "solution-set",
       "technologies": ["xhtml", "css2", "javascript", "prototypejs"],
       "liveUrl": "#",
-      "githubUrl": "#",
-      "featured": false
+      "githubUrl": null,
+      "featured": false,
+      "dateCompleted": "October 2008"
     },
     {
       "id": 14,
       "title": "Ooma Lounge",
-      "description": "",
-      "image": null,
+      "description": "Developed a customer-facing web portal that allowed Ooma users to manage their VoIP phone service, including voicemail, call logs, and account settings. Implemented pixel-perfect designs and integrated with backend services.",
+      "image": "ooma-lounge-1.webm",
       "category": "frontend",
-      "clientId": "linkedin",
-      "technologies": ["html5", "css3", "javascript", "emberjs", "spa", "scrum"]
+      "clientId": "solution-set",
+      "technologies": ["html5", "css3", "javascript"],
+      "dateCompleted": "October 2008",
+      "caseStudy": {
+        "situation": ["Ooma, a Palo Alto telecommunications start-up, was preparing to launch their hardware product and needed a customer-facing web portal—the Ooma Lounge—to match the sleek design and innovative nature of their device. Their internal staff was fully occupied with hardware and backend development, so they engaged an agency team to deliver a complete front-end implementation."],
+        "task": ["As one of the lead front-end developer on the agency team, my responsibility was to translate the creative agency's designs into a fully functional, browser-based interface. The portal needed to provide Ooma users with access to voicemail, call logs, system settings, and account management. A critical requirement was ensuring seamless integration between the front-end user flows (registration, number selection, preferences) and Ooma's backend provisioning systems."],
+        "action": [
+          "<ul>",
+          "<li>Implemented the provided Web 2.0 designs using XHTML/CSS for structure and styling</li>",
+          "<li>Built interactive components in JavaScript to support features like visual voicemail, call log filtering, and preferences management.</li>",
+          "<li>Collaborated with backend engineers to integrate the registration flow, which allowed users to either port an existing phone number or select one from Ooma's predefined pool</li>",
+          "<li>Ensured the front-end communicated correctly with backend services via SOAP/XML, working closely with QA to validate data flows (account provisioning, call records, voicemail sync)</li>",
+          "<li>Optimized the UI for usability and consistency so that the customer experience of the Lounge reflected the premium feel of Ooma's hardware</li>",
+          "</ul>"
+        ],
+        "result": [
+          "The Ooma Lounge successfully launched in parallel with Ooma's hardware, giving customers a polished, web-based control center for their phone service. The portal allowed users to:",
+          "<ul>",
+          "<li>Listen to voicemail and manage messages remotely.</li>",
+          "<li>Access detailed call logs.</li>",
+          "<li>Configure calling preferences and account settings.</li>",
+          "<li>Register devices and set up service with minimal friction.</li>",
+          "</ul>",
+          "This launch-ready interface helped position Ooma as an innovator in consumer telephony, supported large-scale adoption of their hardware, and demonstrated how thoughtful front-end engineering could bring brand identity and backend functionality together in a seamless user experience."
+        ]
+      }
+    },
+    {
+      "id": 15,
+      "title": "Autodesk Manufacturing Community",
+      "description": "",
+      "image": "autodesk-mfg-community-1.png",
+      "category": "frontend",
+      "clientId": "solution-set",
+      "technologies": ["html5", "css3", "javascript"],
+      "dateCompleted": "October 2008"
+    },
+    {
+      "id": 16,
+      "title": "Magellan Website",
+      "description": "",
+      "image": "magellan-1.png",
+      "category": "frontend",
+      "clientId": "solution-set",
+      "technologies": ["html5", "css3", "javascript"],
+      "dateCompleted": "October 2008"
+    },
+    {
+      "id": 17,
+      "title": "SuckBox.com",
+      "description": "",
+      "image": "SucksBox-1.webm",
+      "category": "frontend",
+      "clientId": "rooftop-media",
+      "technologies": ["html5", "css3", "javascript"],
+      "liveUrl": "#",
+      "githubUrl": null,
+      "featured": false,
+      "dateCompleted": "October 2009"
+    },
+    {
+      "id": 18,
+      "title": "Yahoo! Sales Portal",
+      "description": "Built a custom document library management system for Yahoo!'s internal sales team, enabling users to create, organize, and share sales materials with advanced search, bookmarks, and content management features.",
+      "image": "ysp-3.jpg",
+      "category": "frontend",
+      "clientId": "solution-set",
+      "technologies": ["xhtml", "css", "javascript", "ajax", "php", "rss"],
+      "liveUrl": "#",
+      "githubUrl": null,
+      "featured": false,
+      "dateCompleted": "October 2008",
+      "caseStudy": {
+        "situation": [
+          "Yahoo! Sales Team, responsible for advertising and marketing activities across Yahoo!'s diverse web properties, was struggling with an outdated internal document application. Their existing system was slow and required a cumbersome multi-step process for adding new sales documents, involving emailing content to a gatekeeper who would manually upload files. This process led to stale, outdated content and difficulty in adding new users to alleviate the gatekeeper's workload."
+        ],
+        "task": [
+          "As part of the SolutionSet development team, I was tasked with building a custom document library system that would eliminate the need for gatekeepers, streamline document sharing, and provide Yahoo!'s sales team with an efficient way to create, organize, and distribute sales materials. The system needed to integrate with Yahoo!'s Oracle database and work within their strict security environment."
+        ],
+        "action": [
+          "<ul>",
+          "<li>Collaborated with Yahoo!'s internal teams to establish rapport and understand data sharing requirements across departments</li>",
+          "<li>Worked closely with Yahoo!'s network team to set up a secure development environment limited to their Oracle database and specially branded PHP version</li>",
+          "<li>Built a custom application framework based on designs and information architecture provided by Method</li>",
+          "<li>Implemented a unified admin system for uploading and posting documents, eliminating the need for gatekeepers</li>",
+          "<li>Developed full-text search functionality and bookmarking system for easy document discovery</li>",
+          "<li>Created AJAX-powered dialog boxes for quick saves and improved user experience</li>",
+          "<li>Integrated RSS feeds for content updates and centralized homepage data aggregation</li>",
+          "<li>Added advanced features including automatic document deletion, email status updates, group downloads, content management system, events calendar, and comprehensive reporting tools</li>",
+          "</ul>"
+        ],
+        "result": [
+          "The Yahoo! Sales Portal successfully transformed the sales team's document management workflow, resulting in:",
+          "<ul>",
+          "<li>Elimination of gatekeeper bottlenecks through self-service document uploads</li>",
+          "<li>Improved content freshness and accessibility through streamlined processes</li>",
+          "<li>Enhanced user experience with AJAX-powered interactions and centralized data access</li>",
+          "<li>Comprehensive reporting capabilities including search analytics and download statistics</li>",
+          "<li>Scalable system that grew with the sales team's evolving needs</li>",
+          "</ul>",
+          "Yahoo! was so impressed with the initial launch that they commissioned additional extensions, demonstrating the system's effectiveness and adaptability to their business requirements."
+        ]
+      }
     }
   ]
 }
