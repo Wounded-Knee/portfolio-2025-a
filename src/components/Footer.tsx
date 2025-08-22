@@ -39,7 +39,7 @@ const Footer = () => {
       url: 'https://tailwindcss.com/',
       logo: {
         light: '/logos/tailwind-light.png',
-        dark: '/logos/tailwind-dark.png'
+        dark: '/logos/tailwind-light.png'
       }
     },
     {

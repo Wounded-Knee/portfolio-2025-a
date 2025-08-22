@@ -20,10 +20,34 @@ const Navigation = () => {
     { name: 'Contact', href: '#contact' }
   ];
 
-  useEffect(() => {
-    // Check initial dark mode from document class
-    const isDark = document.documentElement.classList.contains('dark');
+  // Function to get current theme state
+  const getCurrentTheme = () => {
+    try {
+      const storedTheme = localStorage.getItem('theme');
+      const isDarkClass = document.documentElement.classList.contains('dark');
+      
+      // If there's a stored theme, use it
+      if (storedTheme) {
+        return storedTheme === 'dark';
+      }
+      
+      // Otherwise, use the current class state
+      return isDarkClass;
+    } catch (error) {
+      console.warn('Failed to get theme from localStorage:', error);
+      return document.documentElement.classList.contains('dark');
+    }
+  };
+
+  // Function to update theme state
+  const updateThemeState = () => {
+    const isDark = getCurrentTheme();
     setIsDarkMode(isDark);
+  };
+
+  useEffect(() => {
+    // Check initial dark mode from document class and localStorage
+    updateThemeState();
     setMounted(true);
 
     // Check initial scroll position
@@ -39,8 +63,34 @@ const Navigation = () => {
       setIsScrolled(window.scrollY > 50);
     };
 
+    // Listen for storage changes (in case theme is changed from another tab/window)
+    const handleStorageChange = (e: StorageEvent) => {
+      if (e.key === 'theme') {
+        updateThemeState();
+      }
+    };
+
+    // Listen for DOM changes (in case theme is changed programmatically)
+    const observer = new MutationObserver((mutations) => {
+      mutations.forEach((mutation) => {
+        if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
+          updateThemeState();
+        }
+      });
+    });
+
     window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener('storage', handleStorageChange);
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['class']
+    });
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('storage', handleStorageChange);
+      observer.disconnect();
+    };
   }, []);
 
   // Handle escape key to close mobile menu
@@ -90,7 +140,6 @@ const Navigation = () => {
 
   const toggleDarkMode = () => {
     const newMode = !isDarkMode;
-    setIsDarkMode(newMode);
     
     try {
       if (newMode) {
@@ -100,8 +149,13 @@ const Navigation = () => {
         document.documentElement.classList.remove('dark');
         localStorage.setItem('theme', 'light');
       }
+      
+      // Update state after successful change
+      setIsDarkMode(newMode);
     } catch (error) {
       console.warn('Failed to save theme to localStorage:', error);
+      // Revert state if localStorage fails
+      setIsDarkMode(!newMode);
     }
   };
 

@@ -111,7 +111,11 @@ const About = () => {
                 </li>
                 <li className="flex items-center">
                   <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
-                  State Management with Redux
+                  State Management with Redux & Context API
+                </li>
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
+                  Performance Optimization & Caching
                 </li>
                 <li className="flex items-center">
                   <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
@@ -119,7 +123,23 @@ const About = () => {
                 </li>
                 <li className="flex items-center">
                   <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
-                  Code Review & Mentoring
+                  API Integration & Data Fetching
+                </li>
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
+                  Build Tools & CI/CD Pipeline Setup
+                </li>
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
+                  Code Review & Technical Mentoring
+                </li>
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
+                  Cross-browser Compatibility
+                </li>
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
+                  SEO Optimization & Analytics
                 </li>
               </ul>
             </div>
