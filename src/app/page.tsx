@@ -8,6 +8,7 @@ import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import Testimonials from '../components/Testimonials';
 import Navigation from '@/components/Navigation';
+import MarioEasterEgg from '../components/MarioEasterEgg';
 
 export default function Home() {
   return (
@@ -25,6 +26,12 @@ export default function Home() {
           <Contact />
         </div>
       </main>
+      {/* <div className="relative">
+        <MarioEasterEgg 
+          animationDuration={15} 
+          startDelay={0}
+        />
+      </div> */}
       <Footer />
     </>
   );
