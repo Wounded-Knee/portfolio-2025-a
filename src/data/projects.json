@@ -84,7 +84,7 @@
       "description": "Performed design & development for a personal research project conceiving a next-generation social media platform, code named D³.",
       "image": null,
       "category": "fullstack",
-      "clientId": "personal-project",
+      "clientId": "jpkramer",
       "technologies": ["html5", "css3", "javascript", "react", "nextjs", "spa", "nodejs"],
       "liveUrl": "#",
       "githubUrl": null,

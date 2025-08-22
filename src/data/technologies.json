@@ -3,455 +3,402 @@
     {
       "id": "react",
       "name": "React",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      "logo": {
+        "light": "/logos/react-light.png",
+        "dark": "/logos/react-light.png"
+      },
       "url": "https://reactjs.org/",
       "level": 95
     },
     {
       "id": "nextjs",
       "name": "Next.js",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
       "url": "https://nextjs.org/",
       "level": 85
     },
     {
       "id": "typescript",
       "name": "TypeScript",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
       "url": "https://www.typescriptlang.org/",
       "level": 100
     },
     {
       "id": "javascript",
       "name": "JavaScript",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
       "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
       "level": 100
     },
     {
       "id": "nodejs",
       "name": "Node.js",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
       "url": "https://nodejs.org/",
       "level": 85
     },
     {
       "id": "python",
       "name": "Python",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
       "url": "https://www.python.org/",
       "level": 0
     },
     {
       "id": "django",
       "name": "Django",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg",
       "url": "https://www.djangoproject.com/",
       "level": 0
     },
     {
       "id": "postgresql",
       "name": "PostgreSQL",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
       "url": "https://www.postgresql.org/",
       "level": 0
     },
     {
       "id": "mongodb",
       "name": "MongoDB",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
       "url": "https://www.mongodb.com/",
       "level": 0
     },
     {
       "id": "docker",
       "name": "Docker",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
       "url": "https://www.docker.com/",
       "level": 0
     },
     {
       "id": "aws",
       "name": "AWS",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg",
+      "logo": {
+        "light": "/logos/aws.png",
+        "dark": "/logos/aws.png"
+      },
       "url": "https://aws.amazon.com/",
       "level": 10
     },
     {
       "id": "git",
       "name": "Git",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
       "url": "https://git-scm.com/",
       "level": 80
     },
     {
       "id": "github",
       "name": "GitHub",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
       "url": "https://github.com/",
       "level": 0
     },
     {
       "id": "tailwindcss",
       "name": "Tailwind CSS",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
+      "logo": {
+        "light": "/logos/tailwind-light.png",
+        "dark": "/logos/tailwind-dark.png"
+      },
       "url": "https://tailwindcss.com/",
       "level": 70
     },
     {
       "id": "css3",
       "name": "CSS3",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
       "url": "https://developer.mozilla.org/en-US/docs/Web/CSS",
       "level": 100
     },
     {
       "id": "html5",
       "name": "HTML5",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
       "url": "https://developer.mozilla.org/en-US/docs/Web/HTML",
       "level": 100
     },
     {
       "id": "redux",
       "name": "Redux",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
       "url": "https://redux.js.org/",
       "level": 100
     },
     {
       "id": "graphql",
       "name": "GraphQL",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg",
       "url": "https://graphql.org/",
       "level": 0
     },
     {
       "id": "vuejs",
       "name": "Vue.js",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
       "url": "https://vuejs.org/",
       "level": 0
     },
     {
       "id": "angular",
       "name": "Angular",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg",
       "url": "https://angular.io/",
       "level": 0
     },
     {
       "id": "sass",
       "name": "Sass",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg",
       "url": "https://sass-lang.com/",
       "level": 90
     },
     {
       "id": "webpack",
       "name": "Webpack",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg",
       "url": "https://webpack.js.org/",
       "level": 0
     },
     {
       "id": "jest",
       "name": "Jest",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg",
       "url": "https://jestjs.io/",
       "level": 80
     },
     {
       "id": "figma",
       "name": "Figma",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
       "url": "https://www.figma.com/",
       "level": 85
     },
     {
       "id": "express",
       "name": "Express",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
       "url": "https://expressjs.com/",
       "level": 80
     },
     {
       "id": "php",
       "name": "PHP",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg",
       "url": "https://www.php.net/",
       "level": 0
     },
     {
       "id": "mysql",
       "name": "MySQL",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
       "url": "https://www.mysql.com/",
       "level": 65
     },
     {
       "id": "emberjs",
       "name": "Ember.js",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ember/ember-original-wordmark.svg",
       "url": "https://emberjs.com/",
       "level": 0
     },
     {
       "id": "backbonejs",
       "name": "Backbone.js",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/backbonejs/backbonejs-original.svg",
       "url": "https://backbonejs.org/",
       "level": 0
     },
     {
       "id": "jquery",
       "name": "jQuery",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg",
       "url": "https://jquery.com/",
       "level": 75
     },
     {
       "id": "mocha",
       "name": "Mocha",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mocha/mocha-plain.svg",
       "url": "https://mochajs.org/",
       "level": 75
     },
     {
       "id": "grunt",
       "name": "Grunt",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grunt/grunt-original.svg",
       "url": "https://gruntjs.com/",
       "level": 70
     },
     {
       "id": "requirejs",
       "name": "RequireJS",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/requirejs/requirejs-original.svg",
       "url": "https://requirejs.org/",
       "level": 0
     },
     {
       "id": "liquid",
       "name": "Liquid",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/liquid/liquid-original.svg",
       "url": "https://shopify.github.io/liquid/",
       "level": 0
     },
     {
       "id": "contentful",
       "name": "Contentful",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/contentful/contentful-original.svg",
       "url": "https://www.contentful.com/",
       "level": 75
     },
     {
       "id": "axios",
       "name": "Axios",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/axios/axios-original.svg",
       "url": "https://axios-http.com/",
       "level": 0
     },
     {
       "id": "websockets",
       "name": "WebSockets",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/websocket/websocket-original.svg",
       "url": "https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API",
       "level": 0
     },
     {
       "id": "emotion",
       "name": "Emotion CSS",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/emotion/emotion-original.svg",
       "url": "https://emotion.sh/",
       "level": 0
     },
     {
       "id": "handlebars",
       "name": "Handlebars",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/handlebars/handlebars-original.svg",
       "url": "https://handlebarsjs.com/",
       "level": 0
     },
     {
       "id": "qunit",
       "name": "QUnit",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/qunit/qunit-original.svg",
       "url": "https://qunitjs.com/",
       "level": 0
     },
     {
       "id": "underscore",
       "name": "Underscore.js",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/underscore/underscore-original.svg",
       "url": "https://underscorejs.org/",
       "level": 0
     },
     {
       "id": "phantomjs",
       "name": "PhantomJS",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/phantomjs/phantomjs-original.svg",
       "url": "https://phantomjs.org/",
       "level": 0
     },
     {
       "id": "ajax",
       "name": "AJAX",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ajax/ajax-original.svg",
       "url": "https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX",
       "level": 0
     },
     {
       "id": "rest",
       "name": "REST APIs",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rest/rest-original.svg",
       "url": "https://restfulapi.net/",
       "level": 100
     },
     {
       "id": "jira",
       "name": "Jira",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg",
       "url": "https://www.atlassian.com/software/jira",
       "level": 85
     },
     {
       "id": "lighthouse",
       "name": "Lighthouse",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/lighthouse/lighthouse-original.svg",
       "url": "https://developers.google.com/web/tools/lighthouse",
       "level": 0
     },
     {
       "id": "nvda",
       "name": "NVDA",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nvda/nvda-original.svg",
       "url": "https://www.nvaccess.org/about-nvda/",
       "level": 0
     },
     {
       "id": "salesforce",
       "name": "Salesforce",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/salesforce/salesforce-original.svg",
       "url": "https://www.salesforce.com/",
       "level": 0
     },
     {
       "id": "slack",
       "name": "Slack",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/slack/slack-original.svg",
       "url": "https://slack.com/",
       "level": 0
     },
     {
       "id": "gmail",
       "name": "Gmail",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gmail/gmail-original.svg",
       "url": "https://mail.google.com/",
       "level": 0
     },
     {
       "id": "wordpress",
       "name": "WordPress",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg",
       "url": "https://wordpress.org/",
       "level": 0
     },
     {
       "id": "drupal",
       "name": "Drupal",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/drupal/drupal-original.svg",
       "url": "https://www.drupal.org/",
       "level": 0
     },
     {
       "id": "spa",
       "name": "Single Page Applications",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
       "url": "https://developer.mozilla.org/en-US/docs/Glossary/SPA",
       "level": 0
     },
     {
       "id": "yui",
       "name": "YUI Library",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/yahoo/yahoo-original.svg",
       "url": "https://yuilibrary.com/",
       "level": 75
     },
     {
       "id": "prototypejs",
       "name": "Prototype.js",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
       "url": "https://prototypejs.org/",
       "level": 0
     },
     {
       "id": "responsive",
       "name": "Responsive Design",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
       "url": "https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design",
       "level": 95
     },
     {
       "id": "xhtml",
       "name": "XHTML",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
       "url": "https://developer.mozilla.org/en-US/docs/Glossary/XHTML",
       "level": 0
     },
     {
       "id": "css2",
       "name": "CSS2",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
       "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS2",
       "level": 0
     },
     {
       "id": "scrum",
       "name": "Scrum",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scrum/scrum-original.svg",
       "url": "https://www.scrum.org/",
       "level": 0
     },
     {
       "id": "shadcn-ui",
       "name": "Shadcn/UI",
-      "logo": "https://ui.shadcn.com/favicon.ico",
       "url": "https://ui.shadcn.com/",
       "level": 85
     },
     {
       "id": "posthog",
       "name": "PostHog",
-      "logo": "https://posthog.com/favicon.ico",
       "url": "https://posthog.com/",
       "level": 80
     },
     {
       "id": "cloudfront",
       "name": "AWS CloudFront",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg",
       "url": "https://aws.amazon.com/cloudfront/",
       "level": 75
     },
     {
       "id": "s3",
       "name": "AWS S3",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg",
       "url": "https://aws.amazon.com/s3/",
       "level": 80
     },
     {
       "id": "github-actions",
       "name": "GitHub Actions",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
       "url": "https://github.com/features/actions",
       "level": 85
     },
     {
       "id": "svg",
       "name": "SVG",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/svg/svg-original.svg",
       "url": "https://developer.mozilla.org/en-US/docs/Web/SVG",
       "level": 90
     }

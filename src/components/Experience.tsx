@@ -18,7 +18,7 @@ const Experience = () => {
 
   // Create a map for quick client lookup by ID
   const clientsMap = new Map(
-    clientsData.clients.map(client => [client.id, client as Client])
+    clientsData.clients.map(client => [client.id, client as unknown as Client])
   );
 
   const experiences = experiencesData.experiences as ExperienceType[];
@@ -37,14 +37,24 @@ const Experience = () => {
           {experiences.map((experience, index) => {
             const client = clientsMap.get(experience.clientId);
             const domain = extractDomain(client?.url || null);
-            const logoUrl = domain 
+            
+            // Use client logo if available, otherwise use domain-based logo.dev
+            const logoUrl = client?.logo 
               ? getLogoUrl(
-                  domain, 
+                  domain || '', 
                   64, 
                   isDarkMode ? 'dark' : 'light', 
-                  isRetina
+                  isRetina,
+                  client.logo
                 )
-              : null;
+              : domain 
+                ? getLogoUrl(
+                    domain, 
+                    64, 
+                    isDarkMode ? 'dark' : 'light', 
+                    isRetina
+                  )
+                : null;
 
             return (
               <div key={index} className="relative experience-item">
@@ -96,7 +106,7 @@ const Experience = () => {
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                         </svg>
-                        <span>{experience.location}</span>
+                        <span>{client?.location}</span>
                       </div>
                       {experience.remote && (
                         <div className="flex items-center gap-2">

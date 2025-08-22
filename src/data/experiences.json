@@ -6,8 +6,7 @@
       "period": "July 2022 - December 2024",
       "description": "Built responsive mobile-first page types and display components for Quicken.com, reducing dependence on Wordpress and Drupal by 90%. Created product selection tools with React and Redux, increasing add-to-cart rate by 30%. Developed recursive rendering engine for Contentful CMS integration.",
       "technologies": ["javascript", "html5", "css3", "sass", "react", "redux", "nodejs", "figma", "docker"],
-      "remote": true,
-      "location": "San Diego, CA"
+      "remote": true
     },
     {
       "title": "Sr. Front-end Software Engineer",
@@ -15,8 +14,7 @@
       "period": "November 2021 - June 2022",
       "description": "Developed check scanning mobile webapp with React, Redux, and REST APIs. Implemented accessible, responsive interfaces and robust state management. Conducted accessibility audits and implemented dynamic form validation.",
       "technologies": ["react", "redux", "javascript", "css3", "figma", "docker"],
-      "remote": true,
-      "location": "San Francisco, CA"
+      "remote": true
     },
     {
       "title": "Sr. Front-end Software Engineer",
@@ -24,53 +22,47 @@
       "period": "March 2021 - June 2021",
       "description": "Built modular UI components for Workflow Intelligence Platform. Implemented client-side state management for customer signals. Integrated third-party data from Gmail, Salesforce, and Slack. Created custom React hooks and comprehensive testing.",
       "technologies": ["react", "redux", "typescript", "css3", "jest", "figma"],
-      "remote": true,
-      "location": "Remote"
+      "remote": true
     },
     {
-      "title": "Web Application Developer",
+      "title": "Sr. Front-end Software Engineer",
       "clientId": "linkedin",
       "period": "September 2019 - September 2020",
       "description": "Provided front-end development for the LinkedIn Hiring Platform. Handled trouble tickets, developed new features, and participated in on-call rotations supporting the product.",
       "technologies": ["html5", "css3", "javascript", "emberjs", "spa", "scrum"],
-      "remote": false,
-      "location": "Sunnyvale, CA"
+      "remote": false
     },
     {
-      "title": "Web Application Developer",
+      "title": "Sr. Front-end Software Engineer",
       "clientId": "linkedin",
       "period": "January 2018 - January 2019",
       "description": "Provided front-end development for the company's legacy hiring system, HireIn. Fielded service requests from other divisions and provided user support.",
       "technologies": ["html5", "css3", "javascript", "emberjs", "spa", "scrum", "nodejs"],
-      "remote": false,
-      "location": "Sunnyvale, CA"
+      "remote": false
     },
     {
-      "title": "Web Application Developer",
-      "clientId": "personal-project",
+      "title": "VP of Engineering",
+      "clientId": "jpkramer",
       "period": "November 2016 - January 2018",
       "description": "Performed design & development for a personal research project conceiving a next-generation social media platform, code named D³.",
       "technologies": ["html5", "css3", "javascript", "react", "nextjs", "spa", "nodejs"],
-      "remote": true,
-      "location": "Remote"
+      "remote": false
     },
     {
-      "title": "Web Application Developer",
+      "title": "Sr. Front-end Software Engineer",
       "clientId": "rubicon-project",
       "period": "October 2013 - November 2016",
       "description": "Worked on the Rubicon advertising marketplace application. Received functionality requirements from designers and produced JavaScript components. Participated in design review meetings to refine mockups and requirements.",
       "technologies": ["html5", "css3", "javascript", "react", "jquery", "spa", "scrum", "nodejs"],
-      "remote": false,
-      "location": "San Francisco, CA"
+      "remote": false
     },
     {
-      "title": "Front-End Web Developer",
+      "title": "Sr. Front-end Software Engineer",
       "clientId": "rosetta",
       "period": "April 2012 - July 2013",
       "description": "Received screen mockups from designers and produced pixel-perfect HTML/CSS. Implemented responsive design requirements for mobile/tablet user-agents. Produced JavaScript components and participated in design review meetings. Mentored junior developers.",
       "technologies": ["html5", "css3", "javascript", "jquery", "scrum", "responsive"],
-      "remote": false,
-      "location": "San Jose, CA"
+      "remote": false
     },
     {
       "title": "Web Application Developer",
@@ -78,8 +70,7 @@
       "period": "July 2010 - April 2012",
       "description": "Performed various maintenance and development tasks related to the company's advertising platform, APT. Investigated and documented user experience problems and developed solutions to them.",
       "technologies": ["html5", "css3", "javascript", "yui", "spa", "scrum"],
-      "remote": false,
-      "location": "Santa Clara, CA"
+      "remote": false
     },
     {
       "title": "Web Application Developer",
@@ -87,8 +78,7 @@
       "period": "October 2009 - April 2010",
       "description": "Received feature requirements and delivered front-end code solutions as part of the Ovi Organizer team.",
       "technologies": ["xhtml", "css2", "javascript", "jquery", "spa", "scrum"],
-      "remote": false,
-      "location": "Mountain View, CA"
+      "remote": false
     },
     {
       "title": "Web Application Developer",
@@ -96,8 +86,7 @@
       "period": "April 2009 - October 2009",
       "description": "Led the front-end design and development of several web properties, including SucksBox, 2009 National College Comedy Competition, rooftopmedia.net, and rooftopcomedy.com.",
       "technologies": ["xhtml", "css2", "javascript", "jquery", "yui"],
-      "remote": false,
-      "location": "San Francisco, CA"
+      "remote": false
     },
     {
       "title": "Front-End Web Developer",
@@ -105,8 +94,7 @@
       "period": "November 2005 - October 2008",
       "description": "Received screen mockups from designers and produced pixel-perfect HTML/CSS. Produced JavaScript components and participated in design review meetings. Maintained a JavaScript component library for internal use.",
       "technologies": ["xhtml", "css2", "javascript", "prototypejs"],
-      "remote": false,
-      "location": "San Francisco, CA"
+      "remote": false
     }
   ]
 }

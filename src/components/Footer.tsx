@@ -3,11 +3,12 @@
 import { useDisplay } from '../hooks/useDisplay';
 import { getLogoUrl } from '../utils/logo';
 import { extractDomain } from '../utils/url';
+import technologiesData from '../data/technologies.json';
 
 const Footer = () => {
   const { isRetina, isDarkMode } = useDisplay();
 
-  // Technology logos configuration
+  // Technology logos configuration - using data from technologies.json
   const techLogos = [
     {
       id: 'nextjs',
@@ -20,10 +21,9 @@ const Footer = () => {
       name: 'React',
       domain: 'reactjs.org',
       url: 'https://reactjs.org/',
-      // Override for React logo - logo.dev doesn't handle React logo well
-      logoOverride: {
+      logo: {
         light: '/logos/react-light.png',
-        dark: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'
+        dark: '/logos/react-light.png'
       }
     },
     {
@@ -37,10 +37,9 @@ const Footer = () => {
       name: 'Tailwind CSS',
       domain: 'tailwindcss.com',
       url: 'https://tailwindcss.com/',
-      // Override for Tailwind CSS logo - logo.dev doesn't handle Tailwind logo well
-      logoOverride: {
+      logo: {
         light: '/logos/tailwind-light.png',
-        dark: '/logos/tailwind-light.png'
+        dark: '/logos/tailwind-dark.png'
       }
     },
     {
@@ -54,8 +53,7 @@ const Footer = () => {
       name: 'AWS',
       domain: 'aws.amazon.com',
       url: 'https://aws.amazon.com/',
-      // Override for AWS logo - logo.dev doesn't handle AWS logo well
-      logoOverride: {
+      logo: {
         light: '/logos/aws.png',
         dark: '/logos/aws.png'
       }
@@ -85,9 +83,15 @@ const Footer = () => {
             <p className="mb-3">Built with:</p>
             <div className="flex justify-center items-center space-x-4">
               {techLogos.map((tech) => {
-                // Use override if available, otherwise use logo.dev
-                const logoSrc = tech.logoOverride 
-                  ? tech.logoOverride[isDarkMode ? 'dark' : 'light']
+                // Use logo object if available, otherwise use logo.dev
+                const logoSrc = tech.logo 
+                  ? getLogoUrl(
+                      tech.domain, 
+                      24, 
+                      isDarkMode ? 'dark' : 'light', 
+                      isRetina,
+                      tech.logo
+                    )
                   : getLogoUrl(tech.domain, 24, isDarkMode ? 'dark' : 'light', isRetina);
                 
                 // Generate aria-label consistently

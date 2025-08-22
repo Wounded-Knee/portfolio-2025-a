@@ -6,7 +6,7 @@
       "type": "company",
       "industry": "Financial Software",
       "url": "https://quicken.com",
-      "logo": "placeholder-logo.svg"
+      "location": "Menlo Park, CA"
     },
     {
       "id": "wells-fargo",
@@ -14,7 +14,7 @@
       "type": "company",
       "industry": "Banking & Financial Services",
       "url": "https://wellsfargo.com",
-      "logo": "placeholder-logo.svg"
+      "location": "San Francisco, CA"
     },
     {
       "id": "nuffsaid",
@@ -22,7 +22,7 @@
       "type": "company",
       "industry": "Workflow Intelligence",
       "url": "https://nuffsaid.com",
-      "logo": "placeholder-logo.svg"
+      "location": "San Francisco, CA"
     },
     {
       "id": "linkedin",
@@ -30,23 +30,27 @@
       "type": "company",
       "industry": "Professional Networking",
       "url": "https://linkedin.com",
-      "logo": "placeholder-logo.svg"
+      "location": "Sunnyvale, CA"
     },
     {
-      "id": "personal-project",
-      "name": "Personal Project (D³)",
+      "id": "jpkramer",
+      "name": "JPKramer.com",
       "type": "personal",
       "industry": "Social Media Platform",
-      "url": null,
-      "logo": "placeholder-logo.svg"
+      "url": "https://www.jpkramer.com",
+      "logo": {
+        "light": "/logos/jpkramer-light.png",
+        "dark": "/logos/jpkramer-dark.png"
+      },
+      "location": "Hayward, CA"
     },
     {
       "id": "portfolio-2025",
       "name": "Personal Portfolio (2025)",
       "type": "personal",
       "industry": "Portfolio & Personal Branding",
-      "url": null,
-      "logo": "placeholder-logo.svg"
+      "url": "https://www.jpkramer.com",
+      "location": "Remote"
     },
     {
       "id": "rubicon-project",
@@ -54,7 +58,7 @@
       "type": "company",
       "industry": "Programmatic Advertising",
       "url": "https://rubiconproject.com",
-      "logo": "placeholder-logo.svg"
+      "location": "San Francisco, CA"
     },
     {
       "id": "rosetta",
@@ -62,7 +66,7 @@
       "type": "company",
       "industry": "Digital Marketing",
       "url": "https://rosetta.com",
-      "logo": "placeholder-logo.svg"
+      "location": "San Jose, CA"
     },
     {
       "id": "yahoo",
@@ -70,7 +74,7 @@
       "type": "company",
       "industry": "Technology & Media",
       "url": "https://yahoo.com",
-      "logo": "placeholder-logo.svg"
+      "location": "Santa Clara, CA"
     },
     {
       "id": "nokia",
@@ -78,7 +82,7 @@
       "type": "company",
       "industry": "Telecommunications",
       "url": "https://nokia.com",
-      "logo": "placeholder-logo.svg"
+      "location": "Mountain View, CA"
     },
     {
       "id": "rooftop-media",
@@ -86,7 +90,7 @@
       "type": "company",
       "industry": "Digital Media",
       "url": "https://rooftopmedia.com",
-      "logo": "placeholder-logo.svg"
+      "location": "San Francisco, CA"
     },
     {
       "id": "solution-set",
@@ -94,7 +98,7 @@
       "type": "company",
       "industry": "Digital Agency",
       "url": "https://solutionset.com",
-      "logo": "placeholder-logo.svg"
+      "location": "San Francisco, CA"
     }
   ]
 }

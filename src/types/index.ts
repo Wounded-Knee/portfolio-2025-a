@@ -1,3 +1,5 @@
+import { LogoObject } from '../utils/logo';
+
 export interface Experience {
   title: string;
   clientId: string;
@@ -5,7 +7,6 @@ export interface Experience {
   description: string;
   technologies: string[];
   remote: boolean;
-  location: string;
 }
 
 export interface CaseStudy {
@@ -24,7 +25,7 @@ export interface Project {
   clientId: string;
   technologies: string[];
   liveUrl?: string;
-  githubUrl?: string;
+  githubUrl?: string | null;
   featured?: boolean;
   caseStudy?: CaseStudy;
 }
@@ -32,7 +33,7 @@ export interface Project {
 export interface Technology {
   id: string;
   name: string;
-  logo: string;
+  logo?: LogoObject;
   url: string;
   level: number;
 }
@@ -43,7 +44,8 @@ export interface Client {
   type: string;
   industry: string;
   url: string | null;
-  logo: string;
+  logo?: LogoObject;
+  location: string;
 }
 
 export interface Certification {
@@ -53,7 +55,7 @@ export interface Certification {
   issueDate: string;
   expiryDate: string | null;
   credentialId: string;
-  logo: string;
+  logo?: LogoObject;
   url: string;
   description: string;
 }
