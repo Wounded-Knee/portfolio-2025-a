@@ -22,7 +22,11 @@
       "type": "company",
       "industry": "Workflow Intelligence",
       "url": "https://nuffsaid.com",
-      "location": "San Francisco, CA"
+      "location": "San Francisco, CA",
+      "logo": {
+        "light": "/logos/nuffsaid-light.png",
+        "dark": "/logos/nuffsaid-light.png"
+      }
     },
     {
       "id": "linkedin",

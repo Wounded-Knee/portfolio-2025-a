@@ -21,7 +21,8 @@ const Projects = () => {
     clientsData.clients.map(client => [client.id, client.name])
   );
 
-  const projects = projectsData.projects;
+  // Let's omit any projects that don't have an image
+  const projects = projectsData.projects.filter(({image}) => image !== null);
 
   const filters = [
     { id: 'all', label: 'All Projects' },

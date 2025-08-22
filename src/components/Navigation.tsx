@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 
 const Navigation = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -21,7 +21,7 @@ const Navigation = () => {
   ];
 
   // Function to get current theme state
-  const getCurrentTheme = () => {
+  const getCurrentTheme = useCallback(() => {
     try {
       const storedTheme = localStorage.getItem('theme');
       const isDarkClass = document.documentElement.classList.contains('dark');
@@ -37,13 +37,13 @@ const Navigation = () => {
       console.warn('Failed to get theme from localStorage:', error);
       return document.documentElement.classList.contains('dark');
     }
-  };
+  }, []);
 
   // Function to update theme state
-  const updateThemeState = () => {
+  const updateThemeState = useCallback(() => {
     const isDark = getCurrentTheme();
     setIsDarkMode(isDark);
-  };
+  }, [getCurrentTheme]);
 
   useEffect(() => {
     // Check initial dark mode from document class and localStorage
@@ -91,7 +91,7 @@ const Navigation = () => {
       window.removeEventListener('storage', handleStorageChange);
       observer.disconnect();
     };
-  }, []);
+  }, [updateThemeState]);
 
   // Handle escape key to close mobile menu
   useEffect(() => {

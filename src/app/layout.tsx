@@ -12,7 +12,6 @@ export const metadata: Metadata = {
   creator: "Joel Kramer",
   icons: {
     icon: [
-      { url: '/favicon.ico', type: 'image/gif' },
       { url: '/favicon.ico', type: 'image/x-icon' }
     ],
     shortcut: '/favicon.ico',
@@ -46,11 +45,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className="scroll-smooth" suppressHydrationWarning={true}>
+      {/* suppressHydrationWarning prevents hydration mismatch from theme script that modifies html class (light/dark) */}
       <head>
-        <link rel="icon" type="image/gif" href="/favicon.ico" />
-        <link rel="shortcut icon" type="image/gif" href="/favicon.ico" />
-        <link rel="apple-touch-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" type="image/x-icon" href="/favicon.ico" />
         {/* Adobe Fonts - Cinzel */}
         <link rel="stylesheet" href="https://use.typekit.net/get8iyo.css" />
         {/* Theme initialization script to prevent flash */}
@@ -75,6 +75,7 @@ export default function RootLayout({
               })();
             `,
           }}
+          suppressHydrationWarning={true}
         />
       </head>
       <body className={`${inter.className} antialiased`}>
