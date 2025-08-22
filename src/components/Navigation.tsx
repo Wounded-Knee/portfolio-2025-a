@@ -214,7 +214,7 @@ const Navigation = () => {
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className={`text-xl font-bold text-white font-cinzel ${isScrolled ? 'opacity-100' : 'opacity-0'} transition-opacity ${isScrolled ? 'duration-5000' : 'duration-500'}`}>
+          <div className={`text-xl font-bold text-gray-900 dark:text-white font-cinzel ${isScrolled ? 'opacity-100' : 'opacity-0'} transition-opacity ${isScrolled ? 'duration-5000' : 'duration-500'}`}>
             <a href="#home" className="focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded px-2 py-1">
               JP Kramer
             </a>
