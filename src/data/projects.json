@@ -4,7 +4,7 @@
       "id": 1,
       "title": "Personal Portfolio (2025)",
       "description": "Designed and implemented a fully-featured personal portfolio application to showcase professional work history, technical expertise, and creative projects. The portfolio itself serves as a living demonstration of software engineering ability—covering everything from UI design and branding to CI/CD and cloud deployment. Features include responsive design with light/dark themes, custom SVG logo design, PostHog analytics integration, and secure AWS deployment with CloudFront CDN.",
-      "image": "portfolio-1.png",
+      "image": "portfolio-2.png",
       "category": "fullstack",
       "clientId": "jpkramer",
       "technologies": ["nextjs", "react", "typescript", "tailwindcss", "shadcn-ui", "svg", "aws", "s3", "cloudfront", "github-actions", "posthog", "git"],
@@ -43,7 +43,7 @@
       "id": 4,
       "title": "Nuffsaid Workflow Intelligence Platform",
       "description": "Built modular UI components for Workflow Intelligence Platform. Implemented client-side state management for customer signals and integrated third-party data from Gmail, Salesforce, and Slack.",
-      "image": null,
+      "image": "wip-2.png",
       "category": "frontend",
       "clientId": "nuffsaid",
       "technologies": ["react", "redux", "typescript", "css3", "jest", "figma", "rest"],
@@ -54,9 +54,9 @@
     },
     {
       "id": 5,
-      "title": "LinkedIn Hiring Platform",
-      "description": "Provided front-end development for the LinkedIn Hiring Platform. Handled trouble tickets, developed new features, and participated in on-call rotations supporting the product.",
-      "image": null,
+      "title": "LinkedIn Recruiter",
+      "description": "Provided front-end development for the LinkedIn hiring platform. Handled trouble tickets, developed new features, and participated in on-call rotations supporting the product.",
+      "image": "recruiter-1.png",
       "category": "frontend",
       "clientId": "linkedin",
       "technologies": ["html5", "css3", "javascript", "emberjs", "spa", "scrum"],
@@ -95,7 +95,7 @@
       "id": 8,
       "title": "Rubicon Advertising Marketplace",
       "description": "Worked on the Rubicon advertising marketplace application. Received functionality requirements from designers and produced JavaScript components. Participated in design review meetings.",
-      "image": null,
+      "image": "49bc-1.png",
       "category": "frontend",
       "clientId": "rubicon-project",
       "technologies": ["html5", "css3", "javascript", "react", "jquery", "spa", "scrum", "nodejs"],
@@ -134,7 +134,7 @@
       "id": 11,
       "title": "Nokia Ovi Organizer",
       "description": "Received feature requirements and delivered front-end code solutions as part of the Ovi Organizer team.",
-      "image": null,
+      "image": "ovi-1.webp",
       "category": "frontend",
       "clientId": "nokia",
       "technologies": ["xhtml", "css2", "javascript", "jquery", "spa", "scrum"],
@@ -147,7 +147,7 @@
       "id": 12,
       "title": "Rooftop Media Web Properties",
       "description": "Led the front-end design and development of several web properties, including SucksBox, 2009 National College Comedy Competition, rooftopmedia.net, and rooftopcomedy.com.",
-      "image": null,
+      "image": "rooftop-media-1.png",
       "category": "frontend",
       "clientId": "rooftop-media",
       "technologies": ["xhtml", "css2", "javascript", "jquery", "yui"],
@@ -205,26 +205,95 @@
     {
       "id": 15,
       "title": "Autodesk Manufacturing Community",
-      "description": "",
+      "description": "Developed a professional community platform for Autodesk's manufacturing users to share ideas, tips, and techniques. Built on Drupal with custom PHP and MovableType integration, featuring customizable homepages, discussion groups, and content feeds. Successfully launched at Autodesk's annual manufacturing conference within a three-week timeline.",
       "image": "autodesk-mfg-community-1.png",
       "category": "frontend",
       "clientId": "solution-set",
-      "technologies": ["html5", "css3", "javascript"],
-      "dateCompleted": "October 2008"
+      "technologies": ["xhtml", "css", "php", "mysql", "javascript", "xml", "perl", "drupal", "movabletype"],
+      "liveUrl": "#",
+      "githubUrl": null,
+      "featured": false,
+      "dateCompleted": "October 2008",
+      "caseStudy": {
+        "situation": [
+          "Autodesk, the world leader in 2D and 3D design software for manufacturing, building and construction, and media and entertainment markets, recognized that their employees and users possessed a wealth of valuable ideas and tools to share. With hundreds of thousands of users already utilizing Autodesk discussion forums, the company wanted to create an environment where information could flow not just from company to user, but from user to company and user to user. The challenge was to entice individuals to interact with one another in a more meaningful way, creating a platform that would make exchanging ideas rewarding, easy, and organized."
+        ],
+        "task": [
+          "As a front-end software engineer on the SolutionSet team, I was tasked with implementing a community platform that would appeal to professionals in the manufacturing industry. The project had an extremely tight timeline—just three weeks from kickoff to Autodesk's annual manufacturing conference where they wanted to preview the beta site. The platform needed to be robust enough to handle professional users while being intuitive and engaging enough to encourage active participation and content sharing."
+        ],
+        "action": [
+          "<ul>",
+          "<li>Collaborated with the development team to implement a robust third-party foundation using Drupal, customizing features with PHP and integrating MovableType for content management</li>",
+          "<li>Built custom homepage layouts with dynamic content feeds for events, news, and discussion groups, ensuring the platform felt alive and current</li>",
+          "<li>Developed customizable homepage content functionality that allowed users to choose what types of information and geographic areas interested them, creating a personalized experience</li>",
+          "<li>Implemented responsive XHTML/CSS layouts that maintained professional aesthetics while being accessible across different devices and browsers</li>",
+          "<li>Created JavaScript components for enhanced user interactions, including dynamic content loading and real-time updates</li>",
+          "<li>Integrated XML feeds and data structures to support the complex content relationships between users, discussions, and shared resources</li>",
+          "<li>Worked with Perl scripts for MovableType integration and content synchronization</li>",
+          "<li>Ensured the platform reflected the professional nature of the manufacturing community while encouraging user-generated content and collaboration</li>",
+          "</ul>"
+        ],
+        "result": [
+          "The Autodesk Manufacturing Community platform was successfully delivered within the three-week timeline and achieved significant results:",
+          "<ul>",
+          "<li>Successfully previewed the beta site at Autodesk's annual manufacturing conference, meeting the critical deadline</li>",
+          "<li>Launched the live site to great success, creating a professional environment that encouraged user interaction</li>",
+          "<li>Established a foundation for member-generated content that continues to grow organically</li>",
+          "<li>Demonstrated the viability of community platforms for professional software users, leading to plans for additional community-themed portals</li>",
+          "<li>Created a complex community environment that accurately reflected the users who would interact within it</li>",
+          "</ul>",
+          "The project showcased how thoughtful front-end engineering could transform a traditional company-to-user communication model into a vibrant, multi-directional community platform. The success of this implementation helped establish Autodesk as a leader in fostering user communities and set the stage for future community initiatives across their product portfolio."
+        ]
+      }
     },
     {
       "id": 16,
-      "title": "Magellan Website",
-      "description": "",
+      "title": "Magellan Website & E-commerce Platform",
+      "description": "Developed a comprehensive brand identity and e-commerce website for Magellan GPS, featuring dynamic content management, product catalog, and direct-to-consumer sales capabilities. Implemented responsive design with Flash animations and SQL Server backend integration.",
       "image": "magellan-1.png",
       "category": "frontend",
-      "clientId": "solution-set",
-      "technologies": ["html5", "css3", "javascript"],
-      "dateCompleted": "October 2008"
+      "clientId": "magellan",
+      "technologies": ["asp", "flash", "sqlserver", "html5", "css3", "javascript"],
+      "liveUrl": "#",
+      "githubUrl": null,
+      "featured": false,
+      "dateCompleted": "October 2008",
+      "caseStudy": {
+        "situation": [
+          "Magellan, one of the world's leading developers and manufacturers of positioning, navigation, and guidance equipment, was undergoing significant company changes and needed to carve out a new identity while solidifying their web presence. With operations throughout the U.S. and Europe, they required a more dynamic website and a means to connect potential customers to their wide range of global positioning systems, both online and offline. SolutionSet had nurtured a relationship with Magellan since 2001, when the company needed to re-establish its brand and generate consumer awareness."
+        ],
+        "task": [
+          "As a front-end software engineer on the SolutionSet team, I was tasked with implementing a cohesive internet program that would position Magellan as a market leader for GPS solutions. The project required developing a dynamic web infrastructure that the client could administer through a content management system backend, while also launching an e-commerce store to provide a direct-to-consumer sales channel. The solution needed to showcase Magellan's brand identity while generating a new revenue stream and supporting their evolving business needs."
+        ],
+        "action": [
+          "<ul>",
+          "<li>Collaborated with the development team to implement a comprehensive internet program plan documenting product lifecycle, best practices, budget, and resources necessary for Magellan's internet information systems</li>",
+          "<li>Built a dynamic web infrastructure using ASP (Active Server Pages) for server-side functionality and database integration with SQL Server</li>",
+          "<li>Developed a content management system backend that allowed Magellan's internal team to administer and update website content without technical assistance</li>",
+          "<li>Implemented Flash animations and interactive elements to create engaging user experiences that reflected Magellan's innovative brand positioning</li>",
+          "<li>Designed and built an e-commerce store with product catalog, shopping cart functionality, and secure payment processing to enable direct-to-consumer sales</li>",
+          "<li>Created responsive HTML/CSS layouts that maintained brand consistency across different devices and browsers</li>",
+          "<li>Integrated JavaScript components for enhanced user interactions, including product filtering, search functionality, and dynamic content loading</li>",
+          "<li>Ensured seamless integration between the front-end user interface and backend database systems for product information and order management</li>",
+          "<li>Implemented best practices for SEO, accessibility, and performance optimization to maximize online visibility and user experience</li>",
+          "</ul>"
+        ],
+        "result": [
+          "The Magellan website and e-commerce platform successfully transformed their online presence and business operations, achieving significant results:",
+          "<ul>",
+          "<li>Magellan realized a 25% increase in direct-to-consumer sales in their first year of operation</li>",
+          "<li>The e-commerce store experienced 50% growth year after year, establishing a substantial new revenue stream</li>",
+          "<li>Successfully positioned Magellan as a market leader for GPS solutions through enhanced brand identity and professional web presence</li>",
+          "<li>Created a cost-effective, full-service branding and web package that supported Magellan's ongoing evolution as a company</li>",
+          "<li>Established a scalable platform that could grow with Magellan's expanding product portfolio and business needs</li>",
+          "</ul>",
+          "The project demonstrated how thoughtful front-end engineering could transform a traditional manufacturing company's digital presence into a revenue-generating, brand-building platform. The success of this implementation helped establish Magellan as a leader in both GPS technology and digital commerce, setting the foundation for their continued growth in the consumer electronics market."
+        ]
+      }
     },
     {
       "id": 17,
-      "title": "SuckBox.com",
+      "title": "SucksBox.com",
       "description": "",
       "image": "SucksBox-1.webm",
       "category": "frontend",
@@ -239,7 +308,7 @@
       "id": 18,
       "title": "Yahoo! Sales Portal",
       "description": "Built a custom document library management system for Yahoo!'s internal sales team, enabling users to create, organize, and share sales materials with advanced search, bookmarks, and content management features.",
-      "image": "ysp-3.jpg",
+      "image": "ysp-2.png",
       "category": "frontend",
       "clientId": "solution-set",
       "technologies": ["xhtml", "css", "javascript", "ajax", "php", "rss"],

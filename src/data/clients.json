@@ -58,7 +58,11 @@
       "type": "company",
       "industry": "Programmatic Advertising",
       "url": "https://rubiconproject.com",
-      "location": "San Francisco, CA"
+      "location": "San Francisco, CA",
+      "logo": {
+        "light": "/logos/the-rubicon-project.png",
+        "dark": "/logos/the-rubicon-project.png"
+      }
     },
     {
       "id": "rosetta",
@@ -74,7 +78,11 @@
       "type": "company",
       "industry": "Technology & Media",
       "url": "https://yahoo.com",
-      "location": "Santa Clara, CA"
+      "location": "Santa Clara, CA",
+      "logo": {
+        "light": "/logos/yahoo.svg",
+        "dark": "/logos/yahoo.svg"
+      }
     },
     {
       "id": "nokia",
@@ -90,7 +98,11 @@
       "type": "company",
       "industry": "Digital Media",
       "url": "https://rooftopmedia.com",
-      "location": "San Francisco, CA"
+      "location": "San Francisco, CA",
+      "logo": {
+        "light": "/logos/rooftop-media.png",
+        "dark": "/logos/rooftop-media.png"
+      }
     },
     {
       "id": "solution-set",
@@ -99,6 +111,14 @@
       "industry": "Digital Agency",
       "url": "https://solutionset.com",
       "location": "San Francisco, CA"
+    },
+    {
+      "id": "magellan",
+      "name": "Magellan",
+      "type": "company",
+      "industry": "GPS & Navigation Equipment",
+      "url": "https://magellangps.com",
+      "location": "San Dimas, CA"
     }
   ]
 }
