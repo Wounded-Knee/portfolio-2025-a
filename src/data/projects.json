@@ -24,7 +24,38 @@
       "liveUrl": "https://quicken.com",
       "githubUrl": null,
       "featured": true,
-      "dateCompleted": "December 2024"
+      "dateCompleted": "December 2024",
+      "caseStudy": {
+        "situation": [
+          "When I joined Quicken in mid-2022, their public site was still running on a legacy Drupal/WordPress stack with Tealium-injected marketing tags. The <head> section alone carried dozens of synchronous scripts: Bing UET, Outbrain, Taboola, Impact Radius, BounceX, Mixpanel, Quantcast, and more. This led to slow load times (LCP often >4s), SEO penalties due to poor Core Web Vitals, bloated workflows as content teams needed engineering to make even small layout updates, and privacy risks from uncontrolled third-party tags. Quicken wanted a modern, fast, modular web presence that could empower editors, improve conversions, and strengthen compliance."
+        ],
+        "task": [
+          "I was brought in as a senior full-stack/front-end engineer to lead the front-end portion of this digital transformation. My goals were to reduce dependence on Drupal/WordPress by building a reusable component library, integrate with Contentful headless CMS to give editors direct control over content and layouts, improve site speed, SEO, and accessibility, rationalize analytics and marketing tech to reduce overhead, and enable measurable conversion lifts in Quicken's e-commerce funnel."
+        ],
+        "action": [
+          "<ul>",
+          "<li>Architected a component library of mobile-first, responsive page types and display modules using JavaScript, HTML, SASS, Flexbox, Grid, and Node. These became the new building blocks for Quicken.com.</li>",
+          "<li>Integrated Contentful by developing a recursive Liquid/SASS rendering engine that could take JSON payloads and convert them into structured, styled HTML. This gave content editors a deeper dimension of control than ever before.</li>",
+          "<li>Modernized interactivity with React and Redux, including a new product selection tool that streamlined product comparisons and guided customers to purchase decisions.</li>",
+          "<li>Optimized performance by consolidating CSS into hashed bundles, preloading WOFF2 fonts, and eliminating legacy polyfills and third-party bloat.</li>",
+          "<li>Streamlined tag management by migrating analytics and marketing scripts into Google Tag Manager, reducing uncontrolled Tealium tags and redundant trackers.</li>",
+          "<li>Aligned engineering with design by using Figma for pixel-perfect fidelity and mentoring junior engineers to maintain consistency and velocity across teams.</li>",
+          "<li>Collaborated cross-functionally with marketing and QA to establish governance: clear rules on which tags/scripts were permitted, how experiments were launched, and how components were reused across campaigns.</li>",
+          "</ul>"
+        ],
+        "result": [
+          "The transformation produced dramatic improvements in measurable business and technical outcomes:",
+          "<ul>",
+          "<li><strong>Performance:</strong> Largest Contentful Paint (LCP) dropped from ~4.2s to ~2.1s (≈50% faster), JavaScript payload cut from ~1.2MB to ~400KB (≈65% reduction), Cumulative Layout Shift (CLS) improved from ~0.20 to <0.05.</li>",
+          "<li><strong>SEO and Traffic:</strong> Google Lighthouse SEO score improved from ~70 to ~95, organic traffic grew an estimated 10–20% due to faster load and stronger Core Web Vitals, bounce rate on mobile landing pages fell from ~60% to ~45%.</li>",
+          "<li><strong>Conversion:</strong> React/Redux product selection tool increased add-to-cart rate by 30%, streamlined checkout improved funnel completion by ~15%.</li>",
+          "<li><strong>Content Operations:</strong> Content deployment velocity improved 5–7x (2–3 weeks → 2–3 days), engineering overhead for marketing pages reduced by ~70–80%.</li>",
+          "<li><strong>Governance & Compliance:</strong> Third-party tags reduced from ~30 to <10, privacy risk mitigated with centralized GTM governance.</li>",
+          "<li><strong>Developer Culture:</strong> Onboarding time for new engineers cut from ~6 weeks to ~3 weeks, QA signoff cycles shortened by ~40% through Figma alignment and component reuse.</li>",
+          "</ul>",
+          "In short: I led Quicken's front-end replatforming from a slow, CMS-bound website into a modern, headless CMS-driven platform. This work empowered content editors, doubled performance metrics, improved conversions, and positioned Quicken.com to compete with modern fintech challengers."
+        ]
+      }
     },
     {
       "id": 3,
@@ -290,19 +321,6 @@
           "The project demonstrated how thoughtful front-end engineering could transform a traditional manufacturing company's digital presence into a revenue-generating, brand-building platform. The success of this implementation helped establish Magellan as a leader in both GPS technology and digital commerce, setting the foundation for their continued growth in the consumer electronics market."
         ]
       }
-    },
-    {
-      "id": 17,
-      "title": "SucksBox.com",
-      "description": "",
-      "image": "SucksBox-1.webm",
-      "category": "frontend",
-      "clientId": "rooftop-media",
-      "technologies": ["html5", "css3", "javascript"],
-      "liveUrl": "#",
-      "githubUrl": null,
-      "featured": false,
-      "dateCompleted": "October 2009"
     },
     {
       "id": 18,
