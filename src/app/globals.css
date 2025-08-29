@@ -5,48 +5,68 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-    --primary: 221.2 83.2% 53.3%;
-    --primary-foreground: 210 40% 98%;
-    --secondary: 210 40% 96%;
-    --secondary-foreground: 222.2 84% 4.9%;
-    --muted: 210 40% 96%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-    --accent: 210 40% 96%;
-    --accent-foreground: 222.2 84% 4.9%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 221.2 83.2% 53.3%;
+    --background: 1 0 0;
+    --foreground: 0.1 0 240;
+    --card: 1 0 0;
+    --card-foreground: 0.1 0 240;
+    --popover: 1 0 0;
+    --popover-foreground: 0.1 0 240;
+    --primary: 0.55 0.15 240;
+    --primary-foreground: 0.98 0.01 240;
+    --secondary: 0.96 0.01 240;
+    --secondary-foreground: 0.1 0 240;
+    --muted: 0.96 0.01 240;
+    --muted-foreground: 0.46 0.02 240;
+    --accent: 0.96 0.01 240;
+    --accent-foreground: 0.1 0 240;
+    --destructive: 0.6 0.2 25;
+    --destructive-foreground: 0.98 0.01 240;
+    --border: 0.91 0.02 240;
+    --input: 0.91 0.02 240;
+    --ring: 0.55 0.15 240;
     --radius: 0.5rem;
+    
+    /* Additional variables for hardcoded colors */
+    --focus-blue: 0.55 0.15 240;
+    --text-gray-600: 0.46 0.02 240;
+    --text-gray-400: 0.64 0.02 240;
+    --bg-gray-100: 0.96 0.01 240;
+    --bg-slate-800: 0.11 0.02 240;
+    --border-gray-300: 0.91 0.02 240;
+    --border-gray-600: 0.46 0.02 240;
+    --theme-color: 0.55 0.15 240;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-    --primary: 217.2 91.2% 59.8%;
-    --primary-foreground: 222.2 84% 4.9%;
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 224.3 76.3% 94.1%;
+    --background: 0.1 0 240;
+    --foreground: 0.98 0.01 240;
+    --card: 0.1 0 240;
+    --card-foreground: 0.98 0.01 240;
+    --popover: 0.1 0 240;
+    --popover-foreground: 0.98 0.01 240;
+    --primary: 0.65 0.2 240;
+    --primary-foreground: 0.1 0 240;
+    --secondary: 0.18 0.02 240;
+    --secondary-foreground: 0.98 0.01 240;
+    --muted: 0.18 0.02 240;
+    --muted-foreground: 0.65 0.02 240;
+    --accent: 0.18 0.02 240;
+    --accent-foreground: 0.98 0.01 240;
+    --destructive: 0.3 0.15 25;
+    --destructive-foreground: 0.98 0.01 240;
+    --border: 0.18 0.02 240;
+    --input: 0.18 0.02 240;
+    --ring: 0.94 0.05 240;
+    
+    /* Dark theme overrides for hardcoded colors */
+    --focus-blue: 0.65 0.2 240;
+    --text-gray-600: 0.65 0.02 240;
+    --text-gray-400: 0.65 0.02 240;
+    --bg-gray-100: 0.18 0.02 240;
+    --bg-slate-800: 0.1 0 240;
+    --border-gray-300: 0.18 0.02 240;
+    --border-gray-600: 0.46 0.02 240;
+    --theme-color: 0.65 0.2 240;
   }
 
   html {
@@ -88,13 +108,13 @@
 
   /* Focus visible for keyboard navigation */
   .focus-visible:focus {
-    outline: 2px solid #3b82f6;
+    outline: 2px solid oklch(var(--focus-blue));
     outline-offset: 2px;
   }
 
   /* High contrast focus indicators */
   *:focus {
-    outline: 2px solid #3b82f6;
+    outline: 2px solid oklch(var(--focus-blue));
     outline-offset: 2px;
   }
 
@@ -105,11 +125,11 @@
 
   /* Ensure sufficient color contrast */
   .text-gray-600 {
-    color: #4b5563; /* Ensures WCAG AA compliance */
+    color: oklch(var(--text-gray-600)); /* Ensures WCAG AA compliance */
   }
 
   .dark .text-gray-400 {
-    color: #9ca3af; /* Ensures WCAG AA compliance in dark mode */
+    color: oklch(var(--text-gray-400)); /* Ensures WCAG AA compliance in dark mode */
   }
 
   /* Reduced motion for users who prefer it */
@@ -127,19 +147,19 @@
   /* High contrast mode support */
   @media (prefers-contrast: high) {
     .bg-gray-100 {
-      background-color: #e5e7eb;
+      background-color: oklch(var(--bg-gray-100));
     }
     
     .dark .bg-slate-800 {
-      background-color: #1e293b;
+      background-color: oklch(var(--bg-slate-800));
     }
     
     .border-gray-300 {
-      border-color: #d1d5db;
+      border-color: oklch(var(--border-gray-300));
     }
     
     .dark .border-gray-600 {
-      border-color: #4b5563;
+      border-color: oklch(var(--border-gray-600));
     }
   }
 
@@ -155,35 +175,153 @@
 }
 
 @layer components {
+  /* Semantic color classes using CSS variables */
+  .text-heading {
+    color: oklch(var(--foreground));
+  }
+  
+  .text-body {
+    color: oklch(var(--muted-foreground));
+  }
+  
+  .text-muted {
+    color: oklch(var(--muted-foreground));
+  }
+  
+  .bg-surface {
+    background-color: oklch(var(--background));
+  }
+  
+  .bg-card {
+    background-color: oklch(var(--card));
+  }
+  
+  .bg-muted {
+    background-color: oklch(var(--muted));
+  }
+  
+  .border-default {
+    border-color: oklch(var(--border));
+  }
+  
   .btn-primary {
-    @apply bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2;
+    background-color: oklch(var(--primary));
+    color: oklch(var(--primary-foreground));
+    font-weight: 500;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    transition: all 0.2s;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btn-primary:hover {
+    background-color: oklch(var(--primary) / 0.9);
+  }
+  
+  .btn-primary:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px oklch(var(--ring)), 0 0 0 4px oklch(var(--background));
   }
   
   .btn-secondary {
-    @apply bg-gray-200 hover:bg-gray-300 dark:bg-slate-700 dark:hover:bg-slate-600 text-gray-900 dark:text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2;
+    background-color: oklch(var(--secondary));
+    color: oklch(var(--secondary-foreground));
+    font-weight: 500;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    transition: all 0.2s;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btn-secondary:hover {
+    background-color: oklch(var(--secondary) / 0.8);
+  }
+  
+  .btn-secondary:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px oklch(var(--ring)), 0 0 0 4px oklch(var(--background));
   }
   
   .section-title {
-    @apply text-4xl font-bold text-gray-900 dark:text-white mb-4 font-cinzel;
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: oklch(var(--foreground));
+    margin-bottom: 1rem;
+    font-family: 'cinzel', sans-serif;
   }
   
   .section-subtitle {
-    @apply text-2xl font-semibold text-gray-900 dark:text-white mb-4 font-cinzel;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: oklch(var(--foreground));
+    margin-bottom: 1rem;
+    font-family: 'cinzel', sans-serif;
   }
 
   /* Accessible link styles */
   .link-accessible {
-    @apply text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 underline decoration-2 underline-offset-2 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded px-1 py-0.5;
+    color: oklch(var(--primary));
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+    border-radius: 0.125rem;
+    padding: 0.125rem 0.25rem;
+    transition: all 0.2s;
+  }
+  
+  .link-accessible:hover {
+    color: oklch(var(--primary) / 0.8);
+  }
+  
+  .link-accessible:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px oklch(var(--ring)), 0 0 0 4px oklch(var(--background));
   }
 
   /* Accessible button styles */
   .btn-accessible {
-    @apply focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-white dark:focus:ring-offset-slate-900;
+    outline: none;
+  }
+  
+  .btn-accessible:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px oklch(var(--ring)), 0 0 0 4px oklch(var(--background));
   }
 
   /* Skip link styles */
   .skip-link {
-    @apply sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-blue-600 text-white px-4 py-2 rounded-lg z-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+  
+  .skip-link:focus {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background-color: oklch(var(--primary));
+    color: oklch(var(--primary-foreground));
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    z-index: 50;
+    outline: none;
+    box-shadow: 0 0 0 2px oklch(var(--ring)), 0 0 0 4px oklch(var(--background));
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
   }
 }
 
@@ -193,25 +331,25 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: hsl(var(--muted));
+  background: oklch(var(--muted));
 }
 
 ::-webkit-scrollbar-thumb {
-  background: hsl(var(--muted-foreground));
+  background: oklch(var(--muted-foreground));
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: hsl(var(--foreground));
+  background: oklch(var(--foreground));
 }
 
 /* High contrast scrollbar for accessibility */
 @media (prefers-contrast: high) {
   ::-webkit-scrollbar-thumb {
-    background: #4b5563;
+    background: oklch(var(--text-gray-600));
   }
   
   ::-webkit-scrollbar-track {
-    background: #e5e7eb;
+    background: oklch(var(--bg-gray-100));
   }
 }
