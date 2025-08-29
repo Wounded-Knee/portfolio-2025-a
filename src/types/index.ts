@@ -70,3 +70,36 @@ export interface Testimonial {
   relationship: string;
   testimony: string;
 }
+
+// Theme Color Morphing Types
+export interface ThemeColors {
+  background: string;
+  foreground: string;
+  card: string;
+  'card-foreground': string;
+  popover: string;
+  'popover-foreground': string;
+  primary: string;
+  'primary-foreground': string;
+  secondary: string;
+  'secondary-foreground': string;
+  muted: string;
+  'muted-foreground': string;
+  accent: string;
+  'accent-foreground': string;
+  destructive: string;
+  'destructive-foreground': string;
+  border: string;
+  input: string;
+  ring: string;
+  'focus-blue': string;
+  'text-gray-600': string;
+  'text-gray-400': string;
+  'bg-gray-100': string;
+  'bg-slate-800': string;
+  'border-gray-300': string;
+  'border-gray-600': string;
+  'theme-color': string;
+}
+
+export type ThemeColorCallback = (colors: ThemeColors) => Partial<ThemeColors>;

@@ -9,6 +9,7 @@ import Footer from '../components/Footer';
 import Testimonials from '../components/Testimonials';
 import Navigation from '@/components/Navigation';
 import MarioEasterEgg from '../components/MarioEasterEgg';
+import { AdvancedThemeMorphDemo } from '@/components/AdvancedThemeMorphDemo';
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Navigation />
       <main id="main-content" className="m-0 min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-900 dark:to-slate-800 overflow-hidden" role="main">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <AdvancedThemeMorphDemo />
           <Hero />
           <About />
           <Projects />
