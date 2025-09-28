@@ -23,7 +23,7 @@ const Skills = () => {
     },
     tools: {
       title: 'Tools & DevOps',
-      skills: ['git', 'jira', 'figma', 'jest', 'mocha', 'webpack', 'grunt', 'docker', 'lighthouse', 'contentful', 'liquid']
+      skills: ['git', 'jira', 'figma', 'jest', 'mocha', 'webpack', 'docker', 'contentful', 'liquid']
     }
   };
 

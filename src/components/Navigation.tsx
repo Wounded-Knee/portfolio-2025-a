@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect, useRef, useCallback } from 'react';
+import { scrollToBySelector } from '../utils/scroll';
 
 const Navigation = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -160,10 +161,7 @@ const Navigation = () => {
   };
 
   const scrollToSection = (href: string) => {
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+    scrollToBySelector(href);
     setIsMobileMenuOpen(false);
   };
 

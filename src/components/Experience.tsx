@@ -2,6 +2,7 @@
 
 import technologiesData from '../data/technologies.json';
 import experiencesData from '../data/experiences.json';
+import projectsData from '../data/projects.json';
 import clientsData from '../data/clients.json';
 import { Experience as ExperienceType, Client } from '../types';
 import { getLogoUrl } from '../utils/logo';
@@ -21,7 +22,30 @@ const Experience = () => {
     clientsData.clients.map(client => [client.id, client as unknown as Client])
   );
 
+  // Create a map for quick project lookup by ID
+  const projectsMap = new Map(
+    projectsData.projects.map(project => [project.id, project])
+  );
+
   const experiences = experiencesData.experiences as ExperienceType[];
+
+  // Function to combine and deduplicate technologies from experience and linked projects
+  const getCombinedTechnologies = (experience: ExperienceType): string[] => {
+    const allTechnologies = [...experience.technologies];
+    
+    // Add technologies from linked projects
+    if (experience.projects) {
+      experience.projects.forEach(projectId => {
+        const project = projectsMap.get(projectId);
+        if (project && project.technologies) {
+          allTechnologies.push(...project.technologies);
+        }
+      });
+    }
+    
+    // Remove duplicates and return
+    return [...new Set(allTechnologies)];
+  };
 
   return (
     <section id="experience" className="py-20">
@@ -123,7 +147,7 @@ const Experience = () => {
                     </p>
                     
                     <div className="flex flex-wrap gap-2">
-                      {experience.technologies.map((techId, techIndex) => {
+                      {getCombinedTechnologies(experience).map((techId, techIndex) => {
                         const techName = technologiesMap.get(techId);
                         return techName ? (
                           <span

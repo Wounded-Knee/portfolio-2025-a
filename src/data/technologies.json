@@ -35,24 +35,6 @@
       "level": 85
     },
     {
-      "id": "python",
-      "name": "Python",
-      "url": "https://www.python.org/",
-      "level": 0
-    },
-    {
-      "id": "django",
-      "name": "Django",
-      "url": "https://www.djangoproject.com/",
-      "level": 0
-    },
-    {
-      "id": "postgresql",
-      "name": "PostgreSQL",
-      "url": "https://www.postgresql.org/",
-      "level": 0
-    },
-    {
       "id": "mongodb",
       "name": "MongoDB",
       "url": "https://www.mongodb.com/",
@@ -134,7 +116,7 @@
     },
     {
       "id": "sass",
-      "name": "Sass",
+      "name": "SASS",
       "url": "https://sass-lang.com/",
       "level": 90
     },
@@ -199,12 +181,6 @@
       "level": 75
     },
     {
-      "id": "grunt",
-      "name": "Grunt",
-      "url": "https://gruntjs.com/",
-      "level": 70
-    },
-    {
       "id": "requirejs",
       "name": "RequireJS",
       "url": "https://requirejs.org/",
@@ -247,12 +223,6 @@
       "level": 0
     },
     {
-      "id": "qunit",
-      "name": "QUnit",
-      "url": "https://qunitjs.com/",
-      "level": 0
-    },
-    {
       "id": "underscore",
       "name": "Underscore.js",
       "url": "https://underscorejs.org/",
@@ -281,36 +251,6 @@
       "name": "Jira",
       "url": "https://www.atlassian.com/software/jira",
       "level": 85
-    },
-    {
-      "id": "lighthouse",
-      "name": "Lighthouse",
-      "url": "https://developers.google.com/web/tools/lighthouse",
-      "level": 0
-    },
-    {
-      "id": "nvda",
-      "name": "NVDA",
-      "url": "https://www.nvaccess.org/about-nvda/",
-      "level": 0
-    },
-    {
-      "id": "salesforce",
-      "name": "Salesforce",
-      "url": "https://www.salesforce.com/",
-      "level": 0
-    },
-    {
-      "id": "slack",
-      "name": "Slack",
-      "url": "https://slack.com/",
-      "level": 0
-    },
-    {
-      "id": "gmail",
-      "name": "Gmail",
-      "url": "https://mail.google.com/",
-      "level": 0
     },
     {
       "id": "wordpress",
@@ -395,30 +335,6 @@
       "name": "GitHub Actions",
       "url": "https://github.com/features/actions",
       "level": 85
-    },
-    {
-      "id": "svg",
-      "name": "SVG",
-      "url": "https://developer.mozilla.org/en-US/docs/Web/SVG",
-      "level": 90
-    },
-    {
-      "id": "asp",
-      "name": "ASP (Active Server Pages)",
-      "url": "https://docs.microsoft.com/en-us/aspnet/",
-      "level": 0
-    },
-    {
-      "id": "flash",
-      "name": "Adobe Flash",
-      "url": "https://www.adobe.com/products/flash.html",
-      "level": 0
-    },
-    {
-      "id": "sqlserver",
-      "name": "SQL Server",
-      "url": "https://www.microsoft.com/en-us/sql-server/",
-      "level": 0
     }
   ]
 }
