@@ -10,7 +10,8 @@ export const getLogoUrl = (
   size: number = 32, 
   theme: 'light' | 'dark' | 'auto' = 'auto', 
   retina: boolean = false,
-  logoObject?: LogoObject
+  logoObject?: LogoObject,
+  greyscale: boolean = false
 ) => {
   // If logo object is provided, use the appropriate logo file
   if (logoObject) {
@@ -24,7 +25,8 @@ export const getLogoUrl = (
     size: size.toString(),
     format: 'png',
     theme,
-    ...(retina && { retina: 'true' })
+    ...(retina && { retina: 'true' }),
+    ...(greyscale && { greyscale: 'true' })
   });
   
   return `https://img.logo.dev/${domain}?${params.toString()}`;

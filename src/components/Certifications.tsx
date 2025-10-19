@@ -1,6 +1,7 @@
 "use client";
 
 import certificationsData from '../data/certifications.json';
+import technologiesData from '../data/technologies.json';
 import { Certification as CertificationType } from '../types';
 import { getLogoUrl } from '../utils/logo';
 import { useDisplay } from '../hooks/useDisplay';
@@ -63,18 +64,35 @@ const Certifications = () => {
     );
   };
 
-  const getTechnologyLogo = (certificationName: string) => {
-    // Map certification names to technology domains for logo.dev
-    const technologyDomainMap: Record<string, string> = {
-      'Advanced React': 'reactjs.org',
-      'Learn Typescript': 'typescriptlang.org',
-      'TypeScript Operators': 'typescriptlang.org',
-      'TypeScript Variables and Data Types': 'typescriptlang.org'
+  const getTechnologyLogo = (certificationId: string) => {
+    // Map certification IDs to technology IDs as defined in technologies.json
+    const certificationToTechnologyMap: Record<string, string> = {
+      'advanced-react': 'react',
+      'learn-typescript': 'typescript',
+      'typescript-operators': 'typescript',
+      'typescript-variables-data-types': 'typescript'
     };
     
-    const domain = technologyDomainMap[certificationName];
-    if (domain) {
-      return getLogoUrl(domain, 40, isDarkMode ? 'dark' : 'light', isRetina);
+    const technologyId = certificationToTechnologyMap[certificationId];
+    if (!technologyId) {
+      return null;
+    }
+    
+    // Find the technology in technologies.json
+    const technology = technologiesData.technologies.find(
+      (tech) => tech.id === technologyId
+    );
+    
+    if (!technology) {
+      return null;
+    }
+    
+    // Extract domain from technology URL (will be used as fallback if no logo object)
+    const domain = technology.url ? extractDomain(technology.url) : '';
+    
+    // Call getLogoUrl once - it will use logo object if present, otherwise use domain for logo.dev
+    if (domain || technology.logo) {
+      return getLogoUrl(domain || '', 40, isDarkMode ? 'dark' : 'light', isRetina, technology.logo);
     }
     
     return null;
@@ -95,7 +113,7 @@ const Certifications = () => {
         
         <div className="grid gap-6 grid-cols-1 md:grid-cols-2">
           {certifications.map((certification) => {
-            const technologyLogo = getTechnologyLogo(certification.name);
+            const technologyLogo = getTechnologyLogo(certification.id);
             
             return (
               <div

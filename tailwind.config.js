@@ -8,6 +8,10 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
+      screens: {
+        'xs': '430px',
+        'md': '1030px',
+      },
       transitionDuration: {
         500: '500ms',
         5000: '5000ms',

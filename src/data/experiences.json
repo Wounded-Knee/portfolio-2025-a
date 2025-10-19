@@ -1,12 +1,12 @@
 {
   "experiences": [
     {
-      "title": "VP of Engineering",
-      "clientId": "jpkramer",
-      "period": "January 2025 - October 2025",
+      "title": "Founder",
+      "clientId": "whitepine",
+      "period": "January 2025 - Present",
       "description": "",
       "technologies": ["html5", "tailwindcss", "typescript", "javascript", "react", "nextjs", "spa", "nodejs"],
-      "projects": [1],
+      "projects": [1,7],
       "remote": false
     },
     {
@@ -55,8 +55,8 @@
       "remote": false
     },
     {
-      "title": "VP of Engineering",
-      "clientId": "jpkramer",
+      "title": "Founder",
+      "clientId": "whitepine",
       "period": "November 2016 - January 2018",
       "description": "Performed design & development for a personal research project conceiving a next-generation social media platform, code named D³.",
       "technologies": ["html5", "css3", "javascript", "react", "nextjs", "spa", "nodejs"],

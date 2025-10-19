@@ -82,14 +82,14 @@ const Experience = () => {
 
             return (
               <div key={index} className="relative experience-item">
-                {/* Timeline line */}
+                {/* Timeline line - hidden below 430px */}
                 {index < experiences.length - 1 && (
-                  <div className="timeline-line absolute left-6 top-16 bottom-0 w-0.5 bg-gray-300 dark:bg-gray-600"></div>
+                  <div className="timeline-line absolute left-6 top-16 bottom-0 w-0.5 bg-gray-300 dark:bg-gray-600 hidden xs:block"></div>
                 )}
                 
-                <div className="flex items-start space-x-6">
-                  {/* Client Logo */}
-                  <div className="timeline-logo flex-shrink-0 w-12 h-12 bg-white dark:bg-slate-800 rounded-full flex items-center justify-center shadow-lg border-2 border-gray-200 dark:border-slate-600 overflow-hidden">
+                <div className="flex items-start xs:space-x-6">
+                  {/* Client Logo - hidden below 430px */}
+                  <div className="timeline-logo hidden xs:flex flex-shrink-0 w-12 h-12 bg-white dark:bg-slate-800 rounded-full items-center justify-center shadow-lg border-2 border-gray-200 dark:border-slate-600 overflow-hidden">
                     {logoUrl ? (
                       <img
                         src={logoUrl}
@@ -111,17 +111,48 @@ const Experience = () => {
                   
                   {/* Content */}
                   <div className="flex-1 bg-gray-50 dark:bg-slate-800 rounded-lg p-6 shadow-sm">
-                    <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-                      <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-                        {experience.title}
-                      </h3>
-                      <span className="text-sm text-blue-600 dark:text-blue-400 font-medium">
-                        {experience.period}
-                      </span>
+                    <div className="mb-4">
+                      {/* Mobile layout (< 430px): Logo + Title/Date container */}
+                      <div className="xs:hidden flex items-center gap-3">
+                        {/* Mobile logo - only shown below 430px */}
+                        <div className="flex-shrink-0 w-[65px] h-[65px] overflow-hidden">
+                          {logoUrl ? (
+                            <img
+                              src={logoUrl}
+                              alt={`${client?.name} logo`}
+                              className="w-full h-full object-cover rounded-full"
+                              onError={(e) => {
+                                // Fallback to default icon if logo fails to load
+                                const target = e.target as HTMLImageElement;
+                                target.style.display = 'none';
+                                target.nextElementSibling?.classList.remove('hidden');
+                              }}
+                            />
+                          ) : null}
+                        </div>
+                        {/* Title and date in same container */}
+                        <div className="flex-1 min-w-0">
+                          <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-1">
+                            {experience.title}
+                          </h3>
+                          <span className="text-base text-blue-600 dark:text-blue-400 font-medium">
+                            {client?.name}
+                          </span>
+                        </div>
+                      </div>
+                      
+                      {/* Desktop layout (>= 430px): Original two-column layout */}
+                      <div className="hidden xs:flex xs:flex-col md:flex-row md:items-center md:justify-between">
+                        <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2 md:mb-0">
+                          {experience.title}
+                        </h3>
+                        <span className="text-base text-blue-600 dark:text-blue-400 font-medium">
+                          {client?.name}
+                        </span>
+                      </div>
                     </div>
-                    
-                    <h4 className="text-lg text-gray-700 dark:text-gray-300 mb-3">
-                      {client?.name}
+                    <h4 className="text-sm text-gray-700 dark:text-gray-300 mb-3">
+                      {experience.period}
                     </h4>
                     
                     <div className="flex items-center gap-4 mb-4 text-sm text-gray-600 dark:text-gray-400">

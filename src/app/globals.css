@@ -142,16 +142,6 @@
       border-color: #4b5563;
     }
   }
-
-  @media (max-width: 430px) {
-    /* The timeline crowds the experience card on narrow viewports,
-    this abuses our margin for the sake of readable content */
-    #experience .experience-item {
-      .timeline-line, .timeline-logo {
-        margin-left: -1.75em;
-      }
-    }
-  }
 }
 
 @layer components {

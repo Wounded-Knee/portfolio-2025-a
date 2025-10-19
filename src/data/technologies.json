@@ -4,8 +4,8 @@
       "id": "react",
       "name": "React",
       "logo": {
-        "light": "/logos/react-light.png",
-        "dark": "/logos/react-light.png"
+        "light": "/logos/react-light.svg",
+        "dark": "/logos/react-dark.svg"
       },
       "url": "https://reactjs.org/",
       "level": 95

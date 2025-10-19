@@ -1,74 +1,47 @@
-"use client";
-
-import { useDisplay } from '../hooks/useDisplay';
-import { getLogoUrl } from '../utils/logo';
-import { extractDomain } from '../utils/url';
-import technologiesData from '../data/technologies.json';
-
 const Footer = () => {
-  const { isRetina, isDarkMode } = useDisplay();
-
-  // Technology logos configuration - using data from technologies.json
+  // Technology logos configuration - hardcoded monochrome logos
   const techLogos = [
     {
       id: 'nextjs',
       name: 'Next.js',
-      domain: 'nextjs.org',
+      logo: '/logos/monochrome/nextjs.svg',
       url: 'https://nextjs.org/'
     },
     {
       id: 'react',
       name: 'React',
-      domain: 'reactjs.org',
-      url: 'https://reactjs.org/',
-      logo: {
-        light: '/logos/react-light.png',
-        dark: '/logos/react-light.png'
-      }
+      logo: '/logos/monochrome/react.svg',
+      url: 'https://reactjs.org/'
     },
     {
       id: 'typescript',
       name: 'TypeScript',
-      domain: 'typescriptlang.org',
+      logo: '/logos/monochrome/typescript.svg',
       url: 'https://www.typescriptlang.org/'
     },
     {
       id: 'tailwindcss',
       name: 'Tailwind CSS',
-      domain: 'tailwindcss.com',
-      url: 'https://tailwindcss.com/',
-      logo: {
-        light: '/logos/tailwind-light.png',
-        dark: '/logos/tailwind-light.png'
-      }
-    },
-    {
-      id: 'posthog',
-      name: 'PostHog',
-      domain: 'posthog.com',
-      url: 'https://posthog.com/'
+      logo: '/logos/monochrome/tailwind.svg',
+      url: 'https://tailwindcss.com/'
     },
     {
       id: 'aws',
       name: 'AWS',
-      domain: 'aws.amazon.com',
-      url: 'https://aws.amazon.com/',
-      logo: {
-        light: '/logos/aws.png',
-        dark: '/logos/aws.png'
-      }
+      logo: '/logos/monochrome/aws.svg',
+      url: 'https://aws.amazon.com/'
     },
     {
       id: 'logo-dev',
       name: 'Logo.dev',
-      domain: 'logo.dev',
+      logo: '/logos/monochrome/logo.dev.svg',
       url: 'https://logo.dev/',
       customAriaLabel: 'Logos provided by Logo.dev'
     },
     {
       id: 'github',
       name: 'GitHub',
-      domain: 'github.com',
+      logo: '/logos/monochrome/github.svg',
       url: 'https://github.com/Wounded-Knee/portfolio-2025-a/',
       customAriaLabel: 'View source code on GitHub'
     }
@@ -83,18 +56,6 @@ const Footer = () => {
             <p className="mb-3">Built with:</p>
             <div className="flex justify-center items-center space-x-4">
               {techLogos.map((tech) => {
-                // Use logo object if available, otherwise use logo.dev
-                const logoSrc = tech.logo 
-                  ? getLogoUrl(
-                      tech.domain, 
-                      24, 
-                      isDarkMode ? 'dark' : 'light', 
-                      isRetina,
-                      tech.logo
-                    )
-                  : getLogoUrl(tech.domain, 24, isDarkMode ? 'dark' : 'light', isRetina);
-                
-                // Generate aria-label consistently
                 const ariaLabel = tech.customAriaLabel 
                   ? `${tech.customAriaLabel} (opens in new tab)`
                   : `${tech.name} (opens in new tab)`;
@@ -109,9 +70,9 @@ const Footer = () => {
                     aria-label={ariaLabel}
                   >
                     <img 
-                      src={logoSrc}
+                      src={tech.logo}
                       alt={tech.name} 
-                      className="h-6 w-auto rounded grayscale hover:grayscale-0 focus:grayscale-0 transition-all duration-200"
+                      className="h-6 w-auto rounded opacity-50 invert-0 dark:invert hover:opacity-100 transition-all duration-200"
                     />
                   </a>
                 );

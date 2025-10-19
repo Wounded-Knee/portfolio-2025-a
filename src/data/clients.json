@@ -37,16 +37,16 @@
       "location": "Sunnyvale, CA"
     },
     {
-      "id": "jpkramer",
-      "name": "JPKramer.com",
+      "id": "whitepine",
+      "name": "Whitepine",
       "type": "personal",
       "industry": "Social Media Platform",
-      "url": "https://www.jpkramer.com",
+      "url": "https://whitepine.jpkramer.com",
       "logo": {
-        "light": "/logos/jpkramer-light.png",
-        "dark": "/logos/jpkramer-dark.png"
+        "light": "/logos/whitepine-light.png",
+        "dark": "/logos/whitepine-dark.png"
       },
-      "location": "Hayward, CA"
+      "location": "San Jose, CA"
     },
     {
       "id": "portfolio-2025",
