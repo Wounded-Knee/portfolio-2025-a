@@ -4,7 +4,8 @@ import { useState, useEffect, useRef, useCallback } from 'react';
 import { scrollToBySelector } from '../utils/scroll';
 
 const Navigation = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  // Theme can be: 'light', 'dark', or 'system'
+  const [theme, setTheme] = useState<'light' | 'dark' | 'system'>('system');
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
@@ -21,34 +22,56 @@ const Navigation = () => {
     { name: 'Contact', href: '#contact' }
   ];
 
-  // Function to get current theme state
-  const getCurrentTheme = useCallback(() => {
+  // Function to get current theme preference
+  const getCurrentTheme = useCallback((): 'light' | 'dark' | 'system' => {
     try {
       const storedTheme = localStorage.getItem('theme');
-      const isDarkClass = document.documentElement.classList.contains('dark');
       
-      // If there's a stored theme, use it
-      if (storedTheme) {
-        return storedTheme === 'dark';
+      // If there's a stored theme, return it
+      if (storedTheme === 'light' || storedTheme === 'dark') {
+        return storedTheme;
       }
       
-      // Otherwise, use the current class state
-      return isDarkClass;
+      // Otherwise, return 'system' as default
+      return 'system';
     } catch (error) {
       console.warn('Failed to get theme from localStorage:', error);
-      return document.documentElement.classList.contains('dark');
+      return 'system';
     }
   }, []);
 
-  // Function to update theme state
-  const updateThemeState = useCallback(() => {
-    const isDark = getCurrentTheme();
-    setIsDarkMode(isDark);
-  }, [getCurrentTheme]);
+  // Function to apply theme to document
+  const applyTheme = useCallback((newTheme: 'light' | 'dark' | 'system') => {
+    try {
+      if (newTheme === 'system') {
+        // Remove stored theme, rely on system preference
+        localStorage.removeItem('theme');
+        // Check system preference
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (prefersDark) {
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+        }
+      } else if (newTheme === 'dark') {
+        document.documentElement.classList.add('dark');
+        localStorage.setItem('theme', 'dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+        localStorage.setItem('theme', 'light');
+      }
+      
+      // Update state after successful change
+      setTheme(newTheme);
+    } catch (error) {
+      console.warn('Failed to save theme to localStorage:', error);
+    }
+  }, []);
 
   useEffect(() => {
-    // Check initial dark mode from document class and localStorage
-    updateThemeState();
+    // Check initial theme preference from localStorage and apply it
+    const currentTheme = getCurrentTheme();
+    applyTheme(currentTheme);
     setMounted(true);
 
     // Check initial scroll position
@@ -66,33 +89,32 @@ const Navigation = () => {
 
     // Listen for storage changes (in case theme is changed from another tab/window)
     const handleStorageChange = (e: StorageEvent) => {
-      if (e.key === 'theme') {
-        updateThemeState();
+      if (e.key === 'theme' || (e.key === null && e.oldValue !== null)) {
+        const currentTheme = getCurrentTheme();
+        applyTheme(currentTheme);
       }
     };
 
-    // Listen for DOM changes (in case theme is changed programmatically)
-    const observer = new MutationObserver((mutations) => {
-      mutations.forEach((mutation) => {
-        if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
-          updateThemeState();
-        }
-      });
-    });
+    // Listen for system theme preference changes
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    const handleSystemThemeChange = () => {
+      // Only update if we're in system mode
+      const currentTheme = getCurrentTheme();
+      if (currentTheme === 'system') {
+        applyTheme('system');
+      }
+    };
 
     window.addEventListener('scroll', handleScroll);
     window.addEventListener('storage', handleStorageChange);
-    observer.observe(document.documentElement, {
-      attributes: true,
-      attributeFilter: ['class']
-    });
+    mediaQuery.addEventListener('change', handleSystemThemeChange);
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
       window.removeEventListener('storage', handleStorageChange);
-      observer.disconnect();
+      mediaQuery.removeEventListener('change', handleSystemThemeChange);
     };
-  }, [updateThemeState]);
+  }, [getCurrentTheme, applyTheme]);
 
   // Handle escape key to close mobile menu
   useEffect(() => {
@@ -139,25 +161,10 @@ const Navigation = () => {
     }
   }, [isMobileMenuOpen]);
 
-  const toggleDarkMode = () => {
-    const newMode = !isDarkMode;
-    
-    try {
-      if (newMode) {
-        document.documentElement.classList.add('dark');
-        localStorage.setItem('theme', 'dark');
-      } else {
-        document.documentElement.classList.remove('dark');
-        localStorage.setItem('theme', 'light');
-      }
-      
-      // Update state after successful change
-      setIsDarkMode(newMode);
-    } catch (error) {
-      console.warn('Failed to save theme to localStorage:', error);
-      // Revert state if localStorage fails
-      setIsDarkMode(!newMode);
-    }
+  const toggleTheme = () => {
+    // Cycle through: light → dark → system → light
+    const nextTheme = theme === 'light' ? 'dark' : theme === 'dark' ? 'system' : 'light';
+    applyTheme(nextTheme);
   };
 
   const scrollToSection = (href: string) => {
@@ -232,42 +239,50 @@ const Navigation = () => {
             ))}
           </div>
           
-          {/* Desktop Dark Mode Toggle */}
+          {/* Desktop Theme Toggle */}
           <div className="hidden md:flex items-center">
             <button
-              onClick={toggleDarkMode}
+              onClick={toggleTheme}
               className="p-2 rounded-lg bg-gray-100 dark:bg-slate-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-slate-700 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
-              aria-label={`Switch to ${isDarkMode ? 'light' : 'dark'} mode`}
-              aria-pressed={isDarkMode}
+              aria-label={theme === 'light' ? 'Switch to dark mode' : theme === 'dark' ? 'Switch to system theme' : 'Switch to light mode'}
+              title={theme === 'light' ? 'Light mode' : theme === 'dark' ? 'Dark mode' : 'System theme'}
             >
-              {isDarkMode ? (
+              {theme === 'light' ? (
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
                 </svg>
-              ) : (
+              ) : theme === 'dark' ? (
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                </svg>
+              ) : (
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
               )}
             </button>
           </div>
 
-          {/* Mobile menu button and dark mode toggle */}
+          {/* Mobile menu button and theme toggle */}
           <div className="md:hidden flex items-center space-x-2">
-            {/* Mobile Dark Mode Toggle */}
+            {/* Mobile Theme Toggle */}
             <button
-              onClick={toggleDarkMode}
+              onClick={toggleTheme}
               className="p-2 rounded-lg bg-gray-100 dark:bg-slate-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-slate-700 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
-              aria-label={`Switch to ${isDarkMode ? 'light' : 'dark'} mode`}
-              aria-pressed={isDarkMode}
+              aria-label={theme === 'light' ? 'Switch to dark mode' : theme === 'dark' ? 'Switch to system theme' : 'Switch to light mode'}
+              title={theme === 'light' ? 'Light mode' : theme === 'dark' ? 'Dark mode' : 'System theme'}
             >
-              {isDarkMode ? (
+              {theme === 'light' ? (
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
                 </svg>
-              ) : (
+              ) : theme === 'dark' ? (
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                </svg>
+              ) : (
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
               )}
             </button>

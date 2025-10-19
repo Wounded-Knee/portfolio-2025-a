@@ -5,31 +5,36 @@ const Footer = () => {
       id: 'nextjs',
       name: 'Next.js',
       logo: '/logos/monochrome/nextjs.svg',
-      url: 'https://nextjs.org/'
+      url: 'https://nextjs.org/',
+      customAriaLabel: 'Built with Next.js'
     },
     {
       id: 'react',
       name: 'React',
       logo: '/logos/monochrome/react.svg',
-      url: 'https://reactjs.org/'
+      url: 'https://reactjs.org/',
+      customAriaLabel: 'Built with React'
     },
     {
       id: 'typescript',
       name: 'TypeScript',
       logo: '/logos/monochrome/typescript.svg',
-      url: 'https://www.typescriptlang.org/'
+      url: 'https://www.typescriptlang.org/',
+      customAriaLabel: 'Typed with TypeScript'
     },
     {
       id: 'tailwindcss',
       name: 'Tailwind CSS',
       logo: '/logos/monochrome/tailwind.svg',
-      url: 'https://tailwindcss.com/'
+      url: 'https://tailwindcss.com/',
+      customAriaLabel: 'Styled with Tailwind CSS'
     },
     {
       id: 'aws',
       name: 'AWS',
       logo: '/logos/monochrome/aws.svg',
-      url: 'https://aws.amazon.com/'
+      url: 'https://aws.amazon.com/',
+      customAriaLabel: 'Hosted on AWS S3 and CloudFront'
     },
     {
       id: 'logo-dev',
@@ -44,6 +49,13 @@ const Footer = () => {
       logo: '/logos/monochrome/github.svg',
       url: 'https://github.com/Wounded-Knee/portfolio-2025-a/',
       customAriaLabel: 'View source code on GitHub'
+    },
+    {
+      id: 'wcag',
+      name: 'WCAG 2.1 AA',
+      logo: '/logos/monochrome/wcag.svg',
+      url: 'https://www.w3.org/WAI/standards-guidelines/wcag/',
+      customAriaLabel: 'WCAG 2.1 AA'
     }
   ];
 
@@ -68,6 +80,7 @@ const Footer = () => {
                     rel="noopener noreferrer"
                     className="hover:scale-110 transition-transform duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded group"
                     aria-label={ariaLabel}
+                    title={ariaLabel}
                   >
                     <img 
                       src={tech.logo}
@@ -78,22 +91,6 @@ const Footer = () => {
                 );
               })}
             </div>
-
-            <div className="text-sm text-gray-500 dark:text-gray-400 mt-8">
-            <p>
-              <a 
-                href="https://www.w3.org/WAI/WCAG21/AA/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline hover:text-blue-600 dark:hover:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded px-1 py-0.5"
-                aria-label="WCAG 2.1 AA guidelines (opens in new tab)"
-              >
-                WCAG 2.1 AA
-              </a>
-              {' '}accessibility standards, featuring keyboard navigation, screen reader compatibility, 
-              high contrast ratios, and semantic HTML structure.
-            </p>
-          </div>
           </div>
         </div>
       </div>
