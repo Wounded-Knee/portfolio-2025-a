@@ -111,16 +111,16 @@
     },
     {
       "id": 7,
-      "title": "Direct Democracy",
-      "description": "Performed design & development for a personal research project conceiving a next-generation social media platform, code named D³.",
-      "image": null,
+      "title": "Whitepine Social Media Platform",
+      "description": "Empowering citizens to defend the Constitution of the USA from domestic enemies",
+      "image": "whitepine-1.png",
       "category": "fullstack",
       "clientId": "whitepine",
-      "technologies": ["html5", "css3", "javascript", "react", "nextjs", "spa", "nodejs"],
+      "technologies": ["html5", "css3", "javascript", "react", "nextjs", "spa", "nodejs", "mongodb", "aws", "git", "github", "tailwindcss", "typescript", "shadcn-ui", "posthog", "cloudfront", "github-actions"],
       "liveUrl": "#",
       "githubUrl": "https://github.com/Wounded-Knee/Whitepine",
-      "featured": true,
-      "dateCompleted": "January 2018"
+      "featured": false,
+      "dateCompleted": "TBD"
     },
     {
       "id": 8,
