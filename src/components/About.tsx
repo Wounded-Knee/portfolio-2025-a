@@ -53,9 +53,9 @@ const About = () => {
           <div className="w-24 h-1 bg-blue-600 mx-auto"></div>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-1 gap-12 items-center">
           {/* Text Content */}
-          <div className="space-y-6">
+          <div className="space-y-6 text-center max-w-3xl mx-auto">
             <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
               I'm a Senior Front-End Software Engineer with over {yearsExperience} years of experience 
               building responsive, accessible web applications. My expertise lies in React, TypeScript, 
@@ -93,55 +93,6 @@ const About = () => {
                 <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">{certifications}</div>
                 <div className="text-sm text-gray-600 dark:text-gray-400">Certifications</div>
               </div>
-            </div>
-          </div>
-          
-          {/* Visual Element */}
-          <div className="relative">
-            <div className="bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl p-8 text-white">
-              <h3 className="text-2xl font-bold mb-4">What I Do</h3>
-              <ul className="space-y-3">
-                <li className="flex items-center">
-                  <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
-                  Frontend Development with React & TypeScript
-                </li>
-                <li className="flex items-center">
-                  <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
-                  Responsive & Accessible UI Design
-                </li>
-                <li className="flex items-center">
-                  <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
-                  State Management with Redux & Context API
-                </li>
-                <li className="flex items-center">
-                  <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
-                  Performance Optimization & Caching
-                </li>
-                <li className="flex items-center">
-                  <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
-                  Testing & Quality Assurance
-                </li>
-                <li className="flex items-center">
-                  <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
-                  API Integration & Data Fetching
-                </li>
-                <li className="flex items-center">
-                  <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
-                  Build Tools & CI/CD Pipeline Setup
-                </li>
-                <li className="flex items-center">
-                  <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
-                  Code Review & Technical Mentoring
-                </li>
-                <li className="flex items-center">
-                  <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
-                  Cross-browser Compatibility
-                </li>
-                <li className="flex items-center">
-                  <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
-                  SEO Optimization & Analytics
-                </li>
-              </ul>
             </div>
           </div>
         </div>

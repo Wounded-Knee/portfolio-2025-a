@@ -25,8 +25,7 @@ const Hero = () => {
           
           {/* Description */}
           <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto leading-relaxed">
-            Experienced frontend engineer with 20+ years building responsive, accessible web applications. 
-            Specializing in React, TypeScript, and modern frontend technologies with a focus on user experience and performance.
+            Integrity &middot; Innovation &middot; Expertise
           </p>
           
           {/* CTA Buttons */}
