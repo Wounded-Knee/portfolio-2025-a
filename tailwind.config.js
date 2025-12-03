@@ -16,30 +16,6 @@ module.exports = {
         500: '500ms',
         5000: '5000ms',
       },
-      keyframes: {
-        'video-blur': {
-          '0%': { 
-            opacity: '1',
-            filter: 'blur(0px)',
-          },
-          '100%': { 
-            opacity: '0.1',
-            filter: 'blur(10px)',
-          },
-        },
-        'content-unblur': {
-          '0%': { 
-            filter: 'blur(100px)',
-          },
-          '100%': { 
-            filter: 'blur(0px)',
-          },
-        },
-      },
-      animation: {
-        'video-blur': 'video-blur 3s ease-out forwards',
-        'content-unblur': 'content-unblur 3s ease-out forwards',
-      },
       colors: {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
