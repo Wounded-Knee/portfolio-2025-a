@@ -4,7 +4,7 @@
       "title": "Founder",
       "clientId": "whitepine",
       "period": "January 2025 - Present",
-      "description": "Conception, Architecture, Design, Development, and Deployment of an innovative social media platform",
+      "description": "Conception, Architecture, Design, Development, and Deployment of an innovative civic media platform",
       "technologies": ["html5", "css3", "javascript", "react", "nextjs", "spa", "nodejs", "mongodb", "aws", "git", "github", "tailwindcss", "typescript", "shadcn-ui", "posthog", "cloudfront", "github-actions"],
       "projects": [7],
       "remote": false
@@ -13,7 +13,7 @@
       "title": "Sr. Full-stack Software Engineer",
       "clientId": "quicken",
       "period": "July 2022 - December 2024",
-      "description": "Built responsive mobile-first page types and display components for Quicken.com, reducing dependence on Wordpress and Drupal by 90%. Created product selection tools with React and Redux, increasing add-to-cart rate by 30%. Developed recursive rendering engine for Contentful CMS integration.",
+      "description": "Built responsive mobile-first page types and display components for Quicken.com, reducing dependence on Wordpress and Drupal by 90%. Created product selection tools with React and Redux, increasing add-to-cart rate. Developed recursive rendering engine for Contentful CMS integration.",
       "technologies": ["javascript", "html5", "css3", "sass", "react", "redux", "nodejs", "figma", "docker"],
       "projects": [2],
       "remote": true
@@ -58,7 +58,7 @@
       "title": "Founder",
       "clientId": "whitepine",
       "period": "November 2016 - January 2018",
-      "description": "Conception, Architecture, Design, Development, and Deployment of an innovative social media platform",
+      "description": "Conception, Architecture, Design, Development, and Deployment of an innovative civic media platform",
       "technologies": ["html5", "css3", "javascript", "react", "nextjs", "spa", "nodejs", "mongodb", "aws", "git", "github", "tailwindcss", "typescript", "shadcn-ui", "posthog", "cloudfront", "github-actions"],
       "projects": [7],
       "remote": false
